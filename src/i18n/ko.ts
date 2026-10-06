@@ -1,0 +1,61 @@
+import type { TranslationKey } from './en'
+
+const ko: Record<TranslationKey, string> = {
+  'accessibility.skipToContent': '본문으로 건너뛰기',
+  'accessibility.homeLink': 'Fril Studio 홈',
+  'accessibility.mainNavigation': '주 메뉴',
+  'accessibility.mobileNavigation': '모바일 메뉴',
+  'accessibility.languageSwitcher': '언어 선택',
+  'accessibility.english': '영어',
+  'accessibility.korean': '한국어',
+  'accessibility.artwork.form':
+    'Form이라는 단어와 섬세한 원형 움직임이 담긴 은색 포스터입니다.',
+  'accessibility.artwork.story':
+    '옅은 해와 대각선, A Place Between이라는 문구가 있는 따뜻한 주황색 포스터입니다.',
+  'accessibility.artwork.objects': '다면체 오브제가 담긴 짙은 파란색 포스터입니다.',
+  'accessibility.artwork.play': '장난스러운 원과 작은 체크무늬가 담긴 연녹색 포스터입니다.',
+  'nav.works': '작품',
+  'nav.about': '소개',
+  'nav.menu': '메뉴',
+  'hero.studioType': '독립 웹 스튜디오',
+  'hero.location': '서울 · 세계 어디서나 작업합니다',
+  'hero.disciplines': '코드 / 움직임 / 이야기 / 놀이',
+  'hero.titleFirst': '직접 들어가 볼 수 있는',
+  'hero.titleSecond': '아이디어.',
+  'hero.description': '탐험할 수 있는 작은 세계, 열린 웹을 위한 인터랙티브 경험을 만듭니다.',
+  'hero.exploreWorks': '주요 작품 둘러보기',
+  'works.collection': '작품 모음',
+  'works.title': '주요 작품',
+  'works.status': '제작 중',
+  'works.collectionNote': '몇 가지 아이디어가 모습을 갖춰갑니다. 각 경험에는 저마다의 시선이 있습니다.',
+  'works.form.title': '움직임의 형태',
+  'works.form.category': '제품 모션',
+  'works.form.posterTitle': '형태',
+  'works.form.posterNote': '움직임에 대한 연구',
+  'works.story.title': '어딘가에서, 천천히',
+  'works.story.category': '스크롤 스토리',
+  'works.story.posterTitle': '그 사이의\n어딘가',
+  'works.story.posterNote': '스크롤로 풀어내는 이야기',
+  'works.objects.title': '부드러운 구조',
+  'works.objects.category': '3D 쇼케이스',
+  'works.objects.posterTitle': '오브제\n연구',
+  'works.objects.posterNote': '빛, 부피, 공간',
+  'works.play.title': '작은 궤도',
+  'works.play.category': '미니 게임',
+  'works.play.posterTitle': '잠깐의\n놀이',
+  'works.play.posterNote': '잠시 쉬어 가는 작은 게임',
+  'about.label': '스튜디오 소개',
+  'about.section': '02 — 스튜디오',
+  'about.title': '호기심을 담은 작업을 위한 고요한 공간.',
+  'about.paragraphOne':
+    'Fril Studio는 코드와 움직임, 이야기가 브라우저 안에서 만날 때 어떤 일이 일어나는지 탐구하는 독립 스튜디오입니다.',
+  'about.paragraphTwo':
+    '이곳은 작은 갤러리이자 새로운 세계로 들어가는 입구입니다. 모든 작업은 각자의 도구와 색, 규칙을 찾아 독립적으로 설 수 있도록 만듭니다.',
+  'footer.tagline': '열린 웹을 위해 만들었습니다',
+  'footer.backToTop': '맨 위로 ↑',
+  'metadata.title': 'Fril Studio — 안으로 들어가 볼 수 있는 아이디어',
+  'metadata.description':
+    'Fril Studio는 열린 웹을 위한 인터랙티브 경험을 만드는 독립 웹 스튜디오입니다.',
+}
+
+export default ko

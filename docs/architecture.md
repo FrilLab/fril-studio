@@ -8,3 +8,7 @@ Fril Studio has two parts with different jobs:
 The root Vite build creates the studio site in `dist/` and copies browser-ready work directories to `dist/works/`. A work at `works/<slug>/index.html` is available at `/works/<slug>/` when the static host serves directory index files. Social posts can link directly to that URL.
 
 This keeps the gallery lightweight and lets each experience evolve independently. Shared packages, a monorepo toolchain, a backend, and deployment-specific infrastructure can be introduced later if actual needs justify them.
+
+## Localization boundary
+
+The React studio shell in `src/` provides English and Korean translations from `src/i18n/`. It detects the browser language on first visit and stores a user's language switch locally. The independent experiences in `works/` are outside this boundary: each work chooses whether and how to localize its own content.
