@@ -12,6 +12,14 @@ The repository contains the initial studio shell and project conventions. The fi
 
 The studio site uses React, TypeScript, Vite, and CSS. The dependency set is intentionally small. Individual works may use plain HTML, CSS, and JavaScript or other web technologies such as GSAP, Three.js, Canvas, WebGL, or React. A work does not need to become a React route.
 
+## Languages and translations
+
+The studio shell supports English (`en`) and Korean (`ko`). On a first visit it uses Korean when the browser's preferred language is Korean, and English otherwise. Choosing `EN` or `KO` in the header stores that explicit preference in `localStorage` for later visits. Locale changes update the page copy, document language, title, and description without changing the URL.
+
+Translations live in `src/i18n/en.ts` and `src/i18n/ko.ts`; locale selection and the React context live in `src/i18n/`. A small typed React context keeps this two-language setup lightweight without adding an i18n dependency or URL routing. When adding or changing copy, add the complete phrase to both dictionaries using the same key, then reference that typed key from the studio components. Avoid composing sentence fragments so each language can use its natural word order.
+
+This localization boundary applies to the React studio shell only. Each directory under `works/` remains an independent experience and may use its own localization approach or remain in one language.
+
 ## Repository structure
 
 ```text
@@ -38,6 +46,7 @@ The development server prints its local URL. The root site is implemented in `sr
 ```bash
 npm run dev        # start the Vite development server
 npm run lint       # lint TypeScript and TSX source
+npm test           # run locale behavior tests
 npm run typecheck  # check TypeScript types
 npm run build      # build the studio and copy works into dist/works
 ```
