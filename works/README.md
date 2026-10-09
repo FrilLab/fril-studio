@@ -14,3 +14,19 @@ Each directory directly inside `works/` is an independent experience. Keep the c
 - **Rights and attribution:** include work-specific third-party asset licenses, sources, attributions, and modifications. Original creative content remains outside the repository's MIT source license unless explicitly licensed otherwise.
 
 Works can use plain HTML/CSS/JavaScript, GSAP, Three.js, Canvas, WebGL, React, or another suitable browser technology. They do not need to share the studio's framework or visual style. If a work needs dependencies or compilation, manage those within its own directory and place the browser-ready result there; the root project does not bundle work dependencies together.
+
+## Running the Fold8 Blender generator
+
+Open `works/001-galaxy-z-fold8/assets/model/source/build_fold8.py` in Blender's
+Text Editor and run this in the Python Console to set the model output path:
+
+```python
+import bpy
+import os
+from pathlib import Path
+
+source = Path(bpy.path.abspath(bpy.data.texts["build_fold8.py"].filepath))
+os.environ["FRIL_FOLD8_MODEL_ROOT"] = str(source.resolve().parent.parent)
+```
+
+Then choose **Scripting > Python Run**.
