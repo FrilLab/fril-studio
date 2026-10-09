@@ -1,0 +1,110 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "model": "Unofficial Galaxy Z Fold8 exterior concept for Fril Studio",
+  "dimensions_mm": {
+    "open_body": [
+      161.4,
+      123.9,
+      4.5
+    ],
+    "folded_width_height_core_stack_mm": [
+      81.9,
+      123.9,
+      8.76
+    ],
+    "folded_full_envelope_mm": [
+      81.9,
+      123.9,
+      9.72
+    ],
+    "official_open": [
+      161.4,
+      123.9,
+      4.5
+    ],
+    "official_folded": [
+      81.9,
+      123.9,
+      9.7
+    ]
+  },
+  "fold_test_degrees": [
+    180,
+    135,
+    90,
+    45,
+    0
+  ],
+  "fold_state_bounds_m": {
+    "180": {
+      "width_m": 0.0807000029935952,
+      "height_m": 0.12389999628067017,
+      "thickness_m": 0.008760006632655859
+    },
+    "135": {
+      "width_m": 0.08072828687727451,
+      "height_m": 0.12389999628067017,
+      "thickness_m": 0.06016064737923443
+    },
+    "90": {
+      "width_m": 0.08082000260765199,
+      "height_m": 0.12389999628067017,
+      "thickness_m": 0.08082000260765199
+    },
+    "45": {
+      "width_m": 0.13776352256536484,
+      "height_m": 0.12389999628067017,
+      "thickness_m": 0.06028064807469491
+    },
+    "0": {
+      "width_m": 0.16140000522136688,
+      "height_m": 0.12389999628067017,
+      "thickness_m": 0.00449999982083682
+    }
+  },
+  "runtime_nodes": [
+    "CameraAssembly",
+    "CameraLens_UltraWide",
+    "CameraLens_Wide",
+    "Flash",
+    "GalaxyZFold8",
+    "Hinge",
+    "HingeRoot",
+    "LeftBody",
+    "LeftBodyPivot",
+    "RightBody",
+    "RightBodyPivot",
+    "Screen_Cover",
+    "Screen_Main_Left",
+    "Screen_Main_Right"
+  ],
+  "mesh_object_count": 29,
+  "asset_object_count_including_groups": 37,
+  "vertex_count_evaluated": 3016,
+  "triangle_count_evaluated": 5780,
+  "glb_size_bytes": 264872,
+  "glb_size_mib": 0.2526,
+  "previews": [
+    "inspection/01-unfolded-front.png",
+    "inspection/02-unfolded-rear.png",
+    "inspection/03-folded-front.png",
+    "inspection/04-folded-rear.png",
+    "inspection/05-fold-90.png",
+    "inspection/06-hinge-side.png",
+    "inspection/07-rear-camera-close.png",
+    "inspection/08-hinge-corner-close.png"
+  ],
+  "checks": {
+    "required_nodes": "passed",
+    "reference_view_left_right_layout": "passed; rear camera half projects left, opposite display half right",
+    "hinge_centered_pivots": "passed at 0, 45, 90, 135, 180 degrees",
+    "independent_body_pivots": "passed; rotating either leaf leaves the other stationary",
+    "open_dimensions": "passed",
+    "folded_dimensions": "passed; full depth includes the camera bump approximation",
+    "independent_screens_and_uvs": "passed",
+    "camera_dual_lens_geometry": "passed",
+    "raised_camera_island_and_flash_grouping": "passed",
+    "camera_plate_ring_lens_flash_depth_layers": "passed",
+    "materials_and_mesh_scales": "passed"
+  }
+}
