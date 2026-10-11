@@ -1,0 +1,5601 @@
+{
+  "schemaVersion": "1.0",
+  "source": {
+    "path": "works/001-galaxy-z-fold8/assets/model/exported/galaxy-z-fold8.glb",
+    "filename": "galaxy-z-fold8.glb",
+    "fileSizeBytes": 272248,
+    "sha256": "b5a41a0dd0cb104cbbfd4660459450f6256414c3a4978ac59c75fd112b0363dc",
+    "committedAssetAssessment": "record this in the work reference README; analyzer does not infer distribution rights"
+  },
+  "file": {
+    "container": "GLB",
+    "glbVersion": 2,
+    "declaredLengthBytes": 272248,
+    "gltfAssetVersion": "2.0",
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "copyright": null,
+    "extras": null,
+    "extensionsUsed": [],
+    "extensionsRequired": []
+  },
+  "scene": {
+    "sceneCount": 1,
+    "defaultSceneIndex": 0,
+    "defaultSceneName": "Scene",
+    "selection": {
+      "rootName": "GalaxyZFold8",
+      "nodeIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "status": "selected-active-subtree"
+    },
+    "documentStats": {
+      "nodeCount": 39,
+      "activeSceneNodeCount": 39,
+      "meshCount": 31,
+      "activeMeshNodeCount": 31,
+      "materialCount": 9,
+      "textureCount": 0,
+      "imageCount": 0,
+      "animationCount": 0,
+      "primitiveCount": 31,
+      "vertexCountByPrimitive": 7974,
+      "triangleCount": 5996
+    },
+    "documentBounds": {
+      "min": [
+        -0.080700003,
+        -0.0052999999,
+        -0.061949999
+      ],
+      "max": [
+        0.080700003,
+        0.00025,
+        0.061949999
+      ],
+      "dimensions": [
+        0.16140001,
+        0.0055499999,
+        0.1239
+      ],
+      "sortedDimensions": [
+        0.16140001,
+        0.1239,
+        0.0055499999
+      ],
+      "normalizedSortedDimensions": [
+        1,
+        0.76765795,
+        0.034386615
+      ],
+      "units": "unknown",
+      "confidence": "measured",
+      "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates",
+      "coordinateConvention": "glTF is right-handed and Y-up; product-facing axes are not inferred from the file convention."
+    },
+    "rootNodes": [
+      {
+        "index": 38,
+        "name": "GalaxyZFold8"
+      }
+    ],
+    "stats": {
+      "nodeCount": 39,
+      "activeSceneNodeCount": 39,
+      "meshCount": 31,
+      "activeMeshNodeCount": 31,
+      "materialCount": 9,
+      "textureCount": 0,
+      "imageCount": 0,
+      "animationCount": 0,
+      "primitiveCount": 31,
+      "vertexCountByPrimitive": 7974,
+      "triangleCount": 5996
+    },
+    "bounds": {
+      "min": [
+        -0.080700003,
+        -0.0052999999,
+        -0.061949999
+      ],
+      "max": [
+        0.080700003,
+        0.00025,
+        0.061949999
+      ],
+      "dimensions": [
+        0.16140001,
+        0.0055499999,
+        0.1239
+      ],
+      "sortedDimensions": [
+        0.16140001,
+        0.1239,
+        0.0055499999
+      ],
+      "normalizedSortedDimensions": [
+        1,
+        0.76765795,
+        0.034386615
+      ],
+      "units": "unknown",
+      "confidence": "measured",
+      "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates",
+      "coordinateConvention": "glTF is right-handed and Y-up; product-facing axes are not inferred from the file convention."
+    }
+  },
+  "geometry": {
+    "vertexDefinition": "Sum of POSITION accessor counts for each mesh primitive; shared accessors may be counted more than once.",
+    "meshNames": [
+      "Hinge_Exterior_Mesh",
+      "Bezel_Main_Left_Mesh",
+      "CameraIsland_Mesh",
+      "Cylinder.003",
+      "Cylinder.001",
+      "Cylinder.002",
+      "Cylinder",
+      "Cylinder.004",
+      "HingeRearRail_Left_Mesh",
+      "LeftFrame_Mesh",
+      "RearPanel_Left_Mesh",
+      "Screen_Main_Left_Mesh",
+      "Bezel_Cover_Mesh",
+      "Bezel_Main_Right_Mesh",
+      "Cube.003",
+      "Cube.002",
+      "Cube.001",
+      "Cylinder.006",
+      "Cylinder.005",
+      "HingeRearRail_Right_Mesh",
+      "RearPanel_Right_Mesh",
+      "RightFrame_Mesh",
+      "Screen_Cover_Mesh",
+      "Screen_Main_Right_Mesh",
+      "Cylinder.007",
+      "Cylinder.008",
+      "Cylinder.009",
+      "Cylinder.010",
+      "Cylinder.011",
+      "Cylinder.012",
+      "Cube.004"
+    ],
+    "attributeNames": [
+      "NORMAL",
+      "POSITION",
+      "TEXCOORD_0"
+    ],
+    "meshes": [
+      {
+        "index": 0,
+        "name": "Hinge_Exterior_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 600,
+        "triangleCount": 332,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 0,
+            "positionCount": 600,
+            "indexAccessor": 2,
+            "indexCount": 996,
+            "triangleCount": 332,
+            "material": 0,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                0,
+                -0.0043799998,
+                -0.061949998
+              ],
+              "max": [
+                0.0012000001,
+                0,
+                0.061949998
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 1,
+        "name": "Bezel_Main_Left_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 168,
+        "triangleCount": 108,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 3,
+            "positionCount": 168,
+            "indexAccessor": 5,
+            "indexCount": 324,
+            "triangleCount": 108,
+            "material": 1,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                0.00039999999,
+                0.000015,
+                -0.06075
+              ],
+              "max": [
+                0.080300003,
+                0.000075000004,
+                0.06075
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 2,
+        "name": "CameraIsland_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 915,
+        "triangleCount": 524,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 6,
+            "positionCount": 915,
+            "indexAccessor": 8,
+            "indexCount": 1572,
+            "triangleCount": 524,
+            "material": 2,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                0.054212287,
+                -0.00496,
+                -0.056689098
+              ],
+              "max": [
+                0.074637167,
+                -0.0043549999,
+                -0.014209022
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 3,
+        "name": "Cylinder.003",
+        "primitiveCount": 1,
+        "vertexCount": 194,
+        "triangleCount": 188,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 9,
+            "positionCount": 194,
+            "indexAccessor": 12,
+            "indexCount": 564,
+            "triangleCount": 188,
+            "material": 3,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.0068398686,
+                -0.000059999998,
+                -0.0068398686
+              ],
+              "max": [
+                0.0068398686,
+                0.000059999998,
+                0.0068398686
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 4,
+        "name": "Cylinder.001",
+        "primitiveCount": 1,
+        "vertexCount": 194,
+        "triangleCount": 188,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 13,
+            "positionCount": 194,
+            "indexAccessor": 12,
+            "indexCount": 564,
+            "triangleCount": 188,
+            "material": 3,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.0068398686,
+                -0.000059999998,
+                -0.0068398686
+              ],
+              "max": [
+                0.0068398686,
+                0.000059999998,
+                0.0068398686
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 5,
+        "name": "Cylinder.002",
+        "primitiveCount": 1,
+        "vertexCount": 520,
+        "triangleCount": 572,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 16,
+            "positionCount": 520,
+            "indexAccessor": 19,
+            "indexCount": 1716,
+            "triangleCount": 572,
+            "material": 4,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.0075278971,
+                -0.00023000001,
+                -0.0075278971
+              ],
+              "max": [
+                0.0075278971,
+                0.00023000001,
+                0.0075278971
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 6,
+        "name": "Cylinder",
+        "primitiveCount": 1,
+        "vertexCount": 520,
+        "triangleCount": 572,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 20,
+            "positionCount": 520,
+            "indexAccessor": 19,
+            "indexCount": 1716,
+            "triangleCount": 572,
+            "material": 4,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.0075278971,
+                -0.00023000001,
+                -0.0075278971
+              ],
+              "max": [
+                0.0075278971,
+                0.00023000001,
+                0.0075278971
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 7,
+        "name": "Cylinder.004",
+        "primitiveCount": 1,
+        "vertexCount": 194,
+        "triangleCount": 188,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 23,
+            "positionCount": 194,
+            "indexAccessor": 12,
+            "indexCount": 564,
+            "triangleCount": 188,
+            "material": 5,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.0021028481,
+                -0.00011,
+                -0.0021028481
+              ],
+              "max": [
+                0.0021028481,
+                0.00011,
+                0.0021028481
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 8,
+        "name": "HingeRearRail_Left_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 168,
+        "triangleCount": 108,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 26,
+            "positionCount": 168,
+            "indexAccessor": 5,
+            "indexCount": 324,
+            "triangleCount": 108,
+            "material": 0,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                0,
+                -0.0044049998,
+                -0.060977262
+              ],
+              "max": [
+                0.0036154552,
+                -0.0043549999,
+                0.060977262
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 9,
+        "name": "LeftFrame_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 590,
+        "triangleCount": 332,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 28,
+            "positionCount": 590,
+            "indexAccessor": 30,
+            "indexCount": 996,
+            "triangleCount": 332,
+            "material": 2,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                0,
+                -0.0043799998,
+                -0.061949998
+              ],
+              "max": [
+                0.080700003,
+                0,
+                0.061949998
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 10,
+        "name": "RearPanel_Left_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 168,
+        "triangleCount": 108,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 31,
+            "positionCount": 168,
+            "indexAccessor": 5,
+            "indexCount": 324,
+            "triangleCount": 108,
+            "material": 6,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                0.00105,
+                -0.0043950002,
+                -0.060899999
+              ],
+              "max": [
+                0.07965,
+                -0.0043449998,
+                0.060899999
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 11,
+        "name": "Screen_Main_Left_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 36,
+        "triangleCount": 34,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 33,
+            "positionCount": 36,
+            "indexAccessor": 36,
+            "indexCount": 102,
+            "triangleCount": 34,
+            "material": 7,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                0.000079999998,
+                0.00012,
+                -0.057912
+              ],
+              "max": [
+                0.077215999,
+                0.00012,
+                0.057912
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 12,
+        "name": "Bezel_Cover_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 36,
+        "triangleCount": 34,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 37,
+            "positionCount": 36,
+            "indexAccessor": 40,
+            "indexCount": 102,
+            "triangleCount": 34,
+            "material": 1,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.079470426,
+                -0.0044049998,
+                -0.060732681
+              ],
+              "max": [
+                -0.0012295741,
+                -0.0044049998,
+                0.060732681
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 13,
+        "name": "Bezel_Main_Right_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 168,
+        "triangleCount": 108,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 41,
+            "positionCount": 168,
+            "indexAccessor": 5,
+            "indexCount": 324,
+            "triangleCount": 108,
+            "material": 1,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                -0.080300003,
+                0.000015,
+                -0.06075
+              ],
+              "max": [
+                -0.00039999999,
+                0.000075000004,
+                0.06075
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 14,
+        "name": "Cube.003",
+        "primitiveCount": 1,
+        "vertexCount": 272,
+        "triangleCount": 188,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 43,
+            "positionCount": 272,
+            "indexAccessor": 46,
+            "indexCount": 564,
+            "triangleCount": 188,
+            "material": 2,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00019999999,
+                -0.00065,
+                -0.0080000004
+              ],
+              "max": [
+                0.00019999999,
+                0.00065,
+                0.0080000004
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 15,
+        "name": "Cube.002",
+        "primitiveCount": 1,
+        "vertexCount": 276,
+        "triangleCount": 188,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 47,
+            "positionCount": 276,
+            "indexAccessor": 50,
+            "indexCount": 564,
+            "triangleCount": 188,
+            "material": 2,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00019999999,
+                -0.00065,
+                -0.0062500001
+              ],
+              "max": [
+                0.00019999999,
+                0.00065,
+                0.0062500001
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 16,
+        "name": "Cube.001",
+        "primitiveCount": 1,
+        "vertexCount": 276,
+        "triangleCount": 188,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 51,
+            "positionCount": 276,
+            "indexAccessor": 50,
+            "indexCount": 564,
+            "triangleCount": 188,
+            "material": 2,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00019999999,
+                -0.00065,
+                -0.0062500001
+              ],
+              "max": [
+                0.00019999999,
+                0.00065,
+                0.0062500001
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 17,
+        "name": "Cylinder.006",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 54,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 3,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00105,
+                -0.000059999998,
+                -0.00105
+              ],
+              "max": [
+                0.00105,
+                0.000059999998,
+                0.00105
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 18,
+        "name": "Cylinder.005",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 58,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 3,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.001,
+                -0.000059999998,
+                -0.001
+              ],
+              "max": [
+                0.001,
+                0.000059999998,
+                0.001
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 19,
+        "name": "HingeRearRail_Right_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 168,
+        "triangleCount": 108,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 61,
+            "positionCount": 168,
+            "indexAccessor": 5,
+            "indexCount": 324,
+            "triangleCount": 108,
+            "material": 0,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                -0.0036154552,
+                -0.0044049998,
+                -0.060977262
+              ],
+              "max": [
+                0,
+                -0.0043549999,
+                0.060977262
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 20,
+        "name": "RearPanel_Right_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 168,
+        "triangleCount": 108,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 63,
+            "positionCount": 168,
+            "indexAccessor": 5,
+            "indexCount": 324,
+            "triangleCount": 108,
+            "material": 6,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                -0.07965,
+                -0.0043950002,
+                -0.060899999
+              ],
+              "max": [
+                -0.00105,
+                -0.0043449998,
+                0.060899999
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 21,
+        "name": "RightFrame_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 590,
+        "triangleCount": 332,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 65,
+            "positionCount": 590,
+            "indexAccessor": 67,
+            "indexCount": 996,
+            "triangleCount": 332,
+            "material": 2,
+            "attributes": [
+              "POSITION",
+              "NORMAL"
+            ],
+            "bounds": {
+              "min": [
+                -0.080700003,
+                -0.0043799998,
+                -0.061949998
+              ],
+              "max": [
+                0,
+                0,
+                0.061949998
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 22,
+        "name": "Screen_Cover_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 36,
+        "triangleCount": 34,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 68,
+            "positionCount": 36,
+            "indexAccessor": 40,
+            "indexCount": 102,
+            "triangleCount": 34,
+            "material": 7,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.077370428,
+                -0.0044200001,
+                -0.059232682
+              ],
+              "max": [
+                -0.0033295741,
+                -0.0044200001,
+                0.059232682
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 23,
+        "name": "Screen_Main_Right_Mesh",
+        "primitiveCount": 1,
+        "vertexCount": 36,
+        "triangleCount": 34,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 71,
+            "positionCount": 36,
+            "indexAccessor": 36,
+            "indexCount": 102,
+            "triangleCount": 34,
+            "material": 7,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.077215999,
+                0.00012,
+                -0.057912
+              ],
+              "max": [
+                -0.000079999998,
+                0.00012,
+                0.057912
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 24,
+        "name": "Cylinder.007",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 74,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00034,
+                -0.000059999998,
+                -0.00034
+              ],
+              "max": [
+                0.00034,
+                0.000059999998,
+                0.00034
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 25,
+        "name": "Cylinder.008",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 77,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00034,
+                -0.000059999998,
+                -0.00034
+              ],
+              "max": [
+                0.00034,
+                0.000059999998,
+                0.00034
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 26,
+        "name": "Cylinder.009",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 80,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00034,
+                -0.000059999998,
+                -0.00034
+              ],
+              "max": [
+                0.00034,
+                0.000059999998,
+                0.00034
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 27,
+        "name": "Cylinder.010",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 83,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00034,
+                -0.000059999998,
+                -0.00034
+              ],
+              "max": [
+                0.00034,
+                0.000059999998,
+                0.00034
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 28,
+        "name": "Cylinder.011",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 86,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00034,
+                -0.000059999998,
+                -0.00034
+              ],
+              "max": [
+                0.00034,
+                0.000059999998,
+                0.00034
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 29,
+        "name": "Cylinder.012",
+        "primitiveCount": 1,
+        "vertexCount": 130,
+        "triangleCount": 124,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 89,
+            "positionCount": 130,
+            "indexAccessor": 57,
+            "indexCount": 372,
+            "triangleCount": 124,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.00034,
+                -0.000059999998,
+                -0.00034
+              ],
+              "max": [
+                0.00034,
+                0.000059999998,
+                0.00034
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      },
+      {
+        "index": 30,
+        "name": "Cube.004",
+        "primitiveCount": 1,
+        "vertexCount": 641,
+        "triangleCount": 428,
+        "primitives": [
+          {
+            "index": 0,
+            "mode": 4,
+            "positionAccessor": 92,
+            "positionCount": 641,
+            "indexAccessor": 95,
+            "indexCount": 1284,
+            "triangleCount": 428,
+            "material": 8,
+            "attributes": [
+              "POSITION",
+              "NORMAL",
+              "TEXCOORD_0"
+            ],
+            "bounds": {
+              "min": [
+                -0.0040000002,
+                -0.001,
+                -0.000090000001
+              ],
+              "max": [
+                0.0040000002,
+                0.001,
+                0.000090000001
+              ]
+            }
+          }
+        ],
+        "includedInAnalysis": true
+      }
+    ],
+    "hierarchy": [
+      {
+        "index": 0,
+        "name": "Hinge_Exterior",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "Hinge",
+          "Hinge_Exterior"
+        ],
+        "parent": 1,
+        "children": [],
+        "mesh": 0,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0,
+            -0.0043799998,
+            -0.061949998
+          ],
+          "max": [
+            0.0012000001,
+            0,
+            0.061949998
+          ],
+          "dimensions": [
+            0.0012000001,
+            0.0043799998,
+            0.1239
+          ],
+          "sortedDimensions": [
+            0.1239,
+            0.0043799998,
+            0.0012000001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.035351089,
+            0.0096852308
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 1,
+        "name": "Hinge",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "Hinge"
+        ],
+        "parent": 37,
+        "children": [
+          0
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 2,
+        "name": "Bezel_Main_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "Bezel_Main_Left"
+        ],
+        "parent": 14,
+        "children": [],
+        "mesh": 1,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.00039999999,
+            0.000015,
+            -0.06075
+          ],
+          "max": [
+            0.080300003,
+            0.000075000004,
+            0.06075
+          ],
+          "dimensions": [
+            0.079900003,
+            0.000060000004,
+            0.1215
+          ],
+          "sortedDimensions": [
+            0.1215,
+            0.079900003,
+            0.000060000004
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.65761319,
+            0.00049382719
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 3,
+        "name": "CameraIsland",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraIsland"
+        ],
+        "parent": 9,
+        "children": [],
+        "mesh": 2,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.054212287,
+            -0.00496,
+            -0.056689098
+          ],
+          "max": [
+            0.074637167,
+            -0.0043549999,
+            -0.014209022
+          ],
+          "dimensions": [
+            0.02042488,
+            0.00060500018,
+            0.042480077
+          ],
+          "sortedDimensions": [
+            0.042480077,
+            0.02042488,
+            0.00060500018
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.48081081,
+            0.014241975
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 4,
+        "name": "CameraLens_UltraWide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraLens_UltraWide"
+        ],
+        "parent": 9,
+        "children": [],
+        "mesh": 3,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0.064424731,
+            -0.0052399999,
+            -0.030560732
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.064424731,
+          -0.0052399999,
+          -0.030560732,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.057584862,
+            -0.0052999999,
+            -0.037400601
+          ],
+          "max": [
+            0.071264599,
+            -0.0051799999,
+            -0.023720863
+          ],
+          "dimensions": [
+            0.013679737,
+            0.00012,
+            0.013679737
+          ],
+          "sortedDimensions": [
+            0.013679737,
+            0.013679737,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.0087720981
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 5,
+        "name": "CameraLens_Wide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraLens_Wide"
+        ],
+        "parent": 9,
+        "children": [],
+        "mesh": 4,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0.064424731,
+            -0.0052399999,
+            -0.046369389
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.064424731,
+          -0.0052399999,
+          -0.046369389,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.057584862,
+            -0.0052999999,
+            -0.053209257
+          ],
+          "max": [
+            0.071264599,
+            -0.0051799999,
+            -0.03952952
+          ],
+          "dimensions": [
+            0.013679737,
+            0.00012,
+            0.013679737
+          ],
+          "sortedDimensions": [
+            0.013679737,
+            0.013679737,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.0087720981
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 6,
+        "name": "CameraRing_UltraWide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraRing_UltraWide"
+        ],
+        "parent": 9,
+        "children": [],
+        "mesh": 5,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0.064424731,
+            -0.00495,
+            -0.030560732
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.064424731,
+          -0.00495,
+          -0.030560732,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.056896834,
+            -0.00518,
+            -0.038088629
+          ],
+          "max": [
+            0.071952628,
+            -0.00472,
+            -0.023032835
+          ],
+          "dimensions": [
+            0.015055794,
+            0.00046000001,
+            0.015055794
+          ],
+          "sortedDimensions": [
+            0.015055794,
+            0.015055794,
+            0.00046000001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.030553022
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 7,
+        "name": "CameraRing_Wide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraRing_Wide"
+        ],
+        "parent": 9,
+        "children": [],
+        "mesh": 6,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0.064424731,
+            -0.00495,
+            -0.046369389
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.064424731,
+          -0.00495,
+          -0.046369389,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.056896834,
+            -0.00518,
+            -0.053897286
+          ],
+          "max": [
+            0.071952628,
+            -0.00472,
+            -0.038841492
+          ],
+          "dimensions": [
+            0.015055794,
+            0.00046000001,
+            0.015055794
+          ],
+          "sortedDimensions": [
+            0.015055794,
+            0.015055794,
+            0.00046000001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.030553022
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 8,
+        "name": "Flash",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "Flash"
+        ],
+        "parent": 9,
+        "children": [],
+        "mesh": 7,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0.064424731,
+            -0.0051000002,
+            -0.019380623
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0.064424731,
+          -0.0051000002,
+          -0.019380623,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.062321883,
+            -0.0052100002,
+            -0.021483472
+          ],
+          "max": [
+            0.066527579,
+            -0.0049900002,
+            -0.017277775
+          ],
+          "dimensions": [
+            0.0042056963,
+            0.00022,
+            0.0042056963
+          ],
+          "sortedDimensions": [
+            0.0042056963,
+            0.0042056963,
+            0.00022
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.052310007
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 9,
+        "name": "CameraAssembly",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly"
+        ],
+        "parent": 14,
+        "children": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 10,
+        "name": "HingeRearRail_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "HingeRearRail_Left"
+        ],
+        "parent": 14,
+        "children": [],
+        "mesh": 8,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0,
+            -0.0044049998,
+            -0.060977262
+          ],
+          "max": [
+            0.0036154552,
+            -0.0043549999,
+            0.060977262
+          ],
+          "dimensions": [
+            0.0036154552,
+            0.000049999915,
+            0.12195452
+          ],
+          "sortedDimensions": [
+            0.12195452,
+            0.0036154552,
+            0.000049999915
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.02964593,
+            0.0004099882
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 11,
+        "name": "LeftFrame",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "LeftFrame"
+        ],
+        "parent": 14,
+        "children": [],
+        "mesh": 9,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0,
+            -0.0043799998,
+            -0.061949998
+          ],
+          "max": [
+            0.080700003,
+            0,
+            0.061949998
+          ],
+          "dimensions": [
+            0.080700003,
+            0.0043799998,
+            0.1239
+          ],
+          "sortedDimensions": [
+            0.1239,
+            0.080700003,
+            0.0043799998
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.65133176,
+            0.035351089
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 12,
+        "name": "RearPanel_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "RearPanel_Left"
+        ],
+        "parent": 14,
+        "children": [],
+        "mesh": 10,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.00105,
+            -0.0043950002,
+            -0.060899999
+          ],
+          "max": [
+            0.07965,
+            -0.0043449998,
+            0.060899999
+          ],
+          "dimensions": [
+            0.0786,
+            0.000050000381,
+            0.1218
+          ],
+          "sortedDimensions": [
+            0.1218,
+            0.0786,
+            0.000050000381
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.64532021,
+            0.00041051216
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 13,
+        "name": "Screen_Main_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "Screen_Main_Left"
+        ],
+        "parent": 14,
+        "children": [],
+        "mesh": 11,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            0.000079999998,
+            0.00012,
+            -0.057912
+          ],
+          "max": [
+            0.077215999,
+            0.00012,
+            0.057912
+          ],
+          "dimensions": [
+            0.077135999,
+            0,
+            0.115824
+          ],
+          "sortedDimensions": [
+            0.115824,
+            0.077135999,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.66597596,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 14,
+        "name": "LeftBody",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody"
+        ],
+        "parent": 15,
+        "children": [
+          2,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 15,
+        "name": "LeftBodyPivot",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot"
+        ],
+        "parent": 37,
+        "children": [
+          14
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": {
+          "runtime_axis": "Local Y through the hinge center"
+        },
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 16,
+        "name": "Bezel_Cover",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Bezel_Cover"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 12,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.079470426,
+            -0.0044049998,
+            -0.060732681
+          ],
+          "max": [
+            -0.0012295741,
+            -0.0044049998,
+            0.060732681
+          ],
+          "dimensions": [
+            0.078240852,
+            0,
+            0.12146536
+          ],
+          "sortedDimensions": [
+            0.12146536,
+            0.078240852,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.64414126,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 17,
+        "name": "Bezel_Main_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Bezel_Main_Right"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 13,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.080300003,
+            0.000015,
+            -0.06075
+          ],
+          "max": [
+            -0.00039999999,
+            0.000075000004,
+            0.06075
+          ],
+          "dimensions": [
+            0.079900003,
+            0.000060000004,
+            0.1215
+          ],
+          "sortedDimensions": [
+            0.1215,
+            0.079900003,
+            0.000060000004
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.65761319,
+            0.00049382719
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 18,
+        "name": "Button_Power",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Button_Power"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 14,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.080499999,
+            -0.0021899999,
+            0.0080000004
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.080499999,
+          -0.0021899999,
+          0.0080000004,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.080699999,
+            -0.0028399999,
+            0
+          ],
+          "max": [
+            -0.080299999,
+            -0.0015399999,
+            0.016000001
+          ],
+          "dimensions": [
+            0.00039999999,
+            0.0013,
+            0.016000001
+          ],
+          "sortedDimensions": [
+            0.016000001,
+            0.0013,
+            0.00039999999
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.081249996,
+            0.024999998
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 19,
+        "name": "Button_Volume_Down",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Button_Volume_Down"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 15,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.080499999,
+            -0.0021899999,
+            -0.0135
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.080499999,
+          -0.0021899999,
+          -0.0135,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.080699999,
+            -0.0028399999,
+            -0.01975
+          ],
+          "max": [
+            -0.080299999,
+            -0.0015399999,
+            -0.0072500003
+          ],
+          "dimensions": [
+            0.00039999999,
+            0.0013,
+            0.0125
+          ],
+          "sortedDimensions": [
+            0.0125,
+            0.0013,
+            0.00039999999
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.104,
+            0.031999999
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 20,
+        "name": "Button_Volume_Up",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Button_Volume_Up"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 16,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.080499999,
+            -0.0021899999,
+            -0.029999999
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.080499999,
+          -0.0021899999,
+          -0.029999999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.080699999,
+            -0.0028399999,
+            -0.036249999
+          ],
+          "max": [
+            -0.080299999,
+            -0.0015399999,
+            -0.023749999
+          ],
+          "dimensions": [
+            0.00039999999,
+            0.0013,
+            0.0125
+          ],
+          "sortedDimensions": [
+            0.0125,
+            0.0013,
+            0.00039999999
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.104,
+            0.031999999
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 21,
+        "name": "Camera_Cover",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Camera_Cover"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 17,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.040350001,
+            -0.0043600001,
+            -0.0504
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.040350001,
+          -0.0043600001,
+          -0.0504,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.041400001,
+            -0.0044200001,
+            -0.05145
+          ],
+          "max": [
+            -0.039300001,
+            -0.0043000001,
+            -0.04935
+          ],
+          "dimensions": [
+            0.0020999999,
+            0.00012,
+            0.0020999999
+          ],
+          "sortedDimensions": [
+            0.0020999999,
+            0.0020999999,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.057142858
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 22,
+        "name": "Camera_MainFront",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Camera_MainFront"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 18,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.040350001,
+            0.00019000001,
+            -0.050999999
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.040350001,
+          0.00019000001,
+          -0.050999999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.041350001,
+            0.00013000001,
+            -0.051999999
+          ],
+          "max": [
+            -0.039350001,
+            0.00025,
+            -0.049999999
+          ],
+          "dimensions": [
+            0.0020000001,
+            0.00012,
+            0.0020000001
+          ],
+          "sortedDimensions": [
+            0.0020000001,
+            0.0020000001,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.059999996
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 23,
+        "name": "HingeRearRail_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "HingeRearRail_Right"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 19,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.0036154552,
+            -0.0044049998,
+            -0.060977262
+          ],
+          "max": [
+            0,
+            -0.0043549999,
+            0.060977262
+          ],
+          "dimensions": [
+            0.0036154552,
+            0.000049999915,
+            0.12195452
+          ],
+          "sortedDimensions": [
+            0.12195452,
+            0.0036154552,
+            0.000049999915
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.02964593,
+            0.0004099882
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 24,
+        "name": "RearPanel_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "RearPanel_Right"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 20,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.07965,
+            -0.0043950002,
+            -0.060899999
+          ],
+          "max": [
+            -0.00105,
+            -0.0043449998,
+            0.060899999
+          ],
+          "dimensions": [
+            0.0786,
+            0.000050000381,
+            0.1218
+          ],
+          "sortedDimensions": [
+            0.1218,
+            0.0786,
+            0.000050000381
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.64532021,
+            0.00041051216
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 25,
+        "name": "RightFrame",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "RightFrame"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 21,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.080700003,
+            -0.0043799998,
+            -0.061949998
+          ],
+          "max": [
+            0,
+            0,
+            0.061949998
+          ],
+          "dimensions": [
+            0.080700003,
+            0.0043799998,
+            0.1239
+          ],
+          "sortedDimensions": [
+            0.1239,
+            0.080700003,
+            0.0043799998
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.65133176,
+            0.035351089
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 26,
+        "name": "Screen_Cover",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Screen_Cover"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 22,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.077370428,
+            -0.0044200001,
+            -0.059232682
+          ],
+          "max": [
+            -0.0033295741,
+            -0.0044200001,
+            0.059232682
+          ],
+          "dimensions": [
+            0.074040853,
+            0,
+            0.11846536
+          ],
+          "sortedDimensions": [
+            0.11846536,
+            0.074040853,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.62500001,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 27,
+        "name": "Screen_Main_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Screen_Main_Right"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 23,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.077215999,
+            0.00012,
+            -0.057912
+          ],
+          "max": [
+            -0.000079999998,
+            0.00012,
+            0.057912
+          ],
+          "dimensions": [
+            0.077135999,
+            0,
+            0.115824
+          ],
+          "sortedDimensions": [
+            0.115824,
+            0.077135999,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.66597596,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 28,
+        "name": "Speaker_Opening_1",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Speaker_Opening_1"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 24,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.024,
+            -0.0021899999,
+            0.061889999
+          ],
+          "rotation": [
+            0.70710683,
+            0,
+            0,
+            0.70710683
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1.3435886e-7,
+          1.0000001,
+          0,
+          0,
+          -1.0000001,
+          -1.3435886e-7,
+          0,
+          -0.024,
+          -0.0021899999,
+          0.061889999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.02434,
+            -0.00253,
+            0.061829999
+          ],
+          "max": [
+            -0.02366,
+            -0.0018499999,
+            0.061949999
+          ],
+          "dimensions": [
+            0.00068,
+            0.0006800001,
+            0.0001200001
+          ],
+          "sortedDimensions": [
+            0.0006800001,
+            0.00068,
+            0.0001200001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.99999984,
+            0.17647071
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 29,
+        "name": "Speaker_Opening_2",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Speaker_Opening_2"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 25,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.027000001,
+            -0.0021899999,
+            0.061889999
+          ],
+          "rotation": [
+            0.70710683,
+            0,
+            0,
+            0.70710683
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1.3435886e-7,
+          1.0000001,
+          0,
+          0,
+          -1.0000001,
+          -1.3435886e-7,
+          0,
+          -0.027000001,
+          -0.0021899999,
+          0.061889999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.027340001,
+            -0.00253,
+            0.061829999
+          ],
+          "max": [
+            -0.026660001,
+            -0.0018499999,
+            0.061949999
+          ],
+          "dimensions": [
+            0.00068,
+            0.0006800001,
+            0.0001200001
+          ],
+          "sortedDimensions": [
+            0.0006800001,
+            0.00068,
+            0.0001200001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.99999984,
+            0.17647071
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 30,
+        "name": "Speaker_Opening_3",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Speaker_Opening_3"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 26,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.029999999,
+            -0.0021899999,
+            0.061889999
+          ],
+          "rotation": [
+            0.70710683,
+            0,
+            0,
+            0.70710683
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1.3435886e-7,
+          1.0000001,
+          0,
+          0,
+          -1.0000001,
+          -1.3435886e-7,
+          0,
+          -0.029999999,
+          -0.0021899999,
+          0.061889999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.030339999,
+            -0.00253,
+            0.061829999
+          ],
+          "max": [
+            -0.029659999,
+            -0.0018499999,
+            0.061949999
+          ],
+          "dimensions": [
+            0.00068,
+            0.0006800001,
+            0.0001200001
+          ],
+          "sortedDimensions": [
+            0.0006800001,
+            0.00068,
+            0.0001200001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.99999984,
+            0.17647071
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 31,
+        "name": "Speaker_Opening_4",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Speaker_Opening_4"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 27,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.033,
+            -0.0021899999,
+            0.061889999
+          ],
+          "rotation": [
+            0.70710683,
+            0,
+            0,
+            0.70710683
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1.3435886e-7,
+          1.0000001,
+          0,
+          0,
+          -1.0000001,
+          -1.3435886e-7,
+          0,
+          -0.033,
+          -0.0021899999,
+          0.061889999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.03334,
+            -0.00253,
+            0.061829999
+          ],
+          "max": [
+            -0.03266,
+            -0.0018499999,
+            0.061949999
+          ],
+          "dimensions": [
+            0.00068,
+            0.0006800001,
+            0.0001200001
+          ],
+          "sortedDimensions": [
+            0.0006800001,
+            0.00068,
+            0.0001200001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.99999984,
+            0.17647071
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 32,
+        "name": "Speaker_Opening_5",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Speaker_Opening_5"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 28,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.035999998,
+            -0.0021899999,
+            0.061889999
+          ],
+          "rotation": [
+            0.70710683,
+            0,
+            0,
+            0.70710683
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1.3435886e-7,
+          1.0000001,
+          0,
+          0,
+          -1.0000001,
+          -1.3435886e-7,
+          0,
+          -0.035999998,
+          -0.0021899999,
+          0.061889999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.036339998,
+            -0.00253,
+            0.061829999
+          ],
+          "max": [
+            -0.035659998,
+            -0.0018499999,
+            0.061949999
+          ],
+          "dimensions": [
+            0.00068,
+            0.0006800001,
+            0.0001200001
+          ],
+          "sortedDimensions": [
+            0.0006800001,
+            0.00068,
+            0.0001200001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.99999984,
+            0.17647071
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 33,
+        "name": "Top_Microphone",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Top_Microphone"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 29,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.050349999,
+            -0.0021899999,
+            -0.061889999
+          ],
+          "rotation": [
+            -0.70710683,
+            0,
+            0,
+            0.70710683
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          -1.3435886e-7,
+          -1.0000001,
+          0,
+          0,
+          1.0000001,
+          -1.3435886e-7,
+          0,
+          -0.050349999,
+          -0.0021899999,
+          -0.061889999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.050689999,
+            -0.00253,
+            -0.061949999
+          ],
+          "max": [
+            -0.050009999,
+            -0.0018499999,
+            -0.061829999
+          ],
+          "dimensions": [
+            0.00068,
+            0.0006800001,
+            0.0001200001
+          ],
+          "sortedDimensions": [
+            0.0006800001,
+            0.00068,
+            0.0001200001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.99999984,
+            0.17647071
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 34,
+        "name": "USB-C_Port",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "USB-C_Port"
+        ],
+        "parent": 35,
+        "children": [],
+        "mesh": 30,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            -0.040350001,
+            -0.0021899999,
+            0.061859999
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -0.040350001,
+          -0.0021899999,
+          0.061859999,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": {
+          "min": [
+            -0.044350001,
+            -0.00319,
+            0.061769999
+          ],
+          "max": [
+            -0.036350001,
+            -0.0011899999,
+            0.061949999
+          ],
+          "dimensions": [
+            0.0080000004,
+            0.0020000001,
+            0.00018
+          ],
+          "sortedDimensions": [
+            0.0080000004,
+            0.0020000001,
+            0.00018
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.25,
+            0.022499999
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 35,
+        "name": "RightBody",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody"
+        ],
+        "parent": 36,
+        "children": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 36,
+        "name": "RightBodyPivot",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot"
+        ],
+        "parent": 37,
+        "children": [
+          35
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": {
+          "runtime_axis": "Local Y through the hinge center"
+        },
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 37,
+        "name": "HingeRoot",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot"
+        ],
+        "parent": 38,
+        "children": [
+          1,
+          15,
+          36
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": null,
+        "includedInAnalysis": true,
+        "worldBounds": null
+      },
+      {
+        "index": 38,
+        "name": "GalaxyZFold8",
+        "path": [
+          "GalaxyZFold8"
+        ],
+        "parent": null,
+        "children": [
+          37
+        ],
+        "mesh": null,
+        "activeInDefaultScene": true,
+        "localTransform": {
+          "matrix": null,
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "worldMatrix": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "nonUniformScale": false,
+        "extras": {
+          "asset_note": "Unofficial Fril Studio interactive concept model"
+        },
+        "includedInAnalysis": true,
+        "worldBounds": null
+      }
+    ],
+    "nonUniformScaleWarnings": []
+  },
+  "runtimeStructure": {
+    "pivots": [
+      {
+        "index": 0,
+        "name": "Hinge_Exterior",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "Hinge",
+          "Hinge_Exterior"
+        ],
+        "mesh": 0
+      },
+      {
+        "index": 1,
+        "name": "Hinge",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "Hinge"
+        ],
+        "mesh": null
+      },
+      {
+        "index": 10,
+        "name": "HingeRearRail_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "HingeRearRail_Left"
+        ],
+        "mesh": 8
+      },
+      {
+        "index": 15,
+        "name": "LeftBodyPivot",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot"
+        ],
+        "mesh": null
+      },
+      {
+        "index": 23,
+        "name": "HingeRearRail_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "HingeRearRail_Right"
+        ],
+        "mesh": 19
+      },
+      {
+        "index": 36,
+        "name": "RightBodyPivot",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot"
+        ],
+        "mesh": null
+      },
+      {
+        "index": 37,
+        "name": "HingeRoot",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot"
+        ],
+        "mesh": null
+      }
+    ],
+    "screens": [
+      {
+        "index": 13,
+        "name": "Screen_Main_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "Screen_Main_Left"
+        ],
+        "mesh": 11,
+        "bounds": {
+          "min": [
+            0.000079999998,
+            0.00012,
+            -0.057912
+          ],
+          "max": [
+            0.077215999,
+            0.00012,
+            0.057912
+          ],
+          "dimensions": [
+            0.077135999,
+            0,
+            0.115824
+          ],
+          "sortedDimensions": [
+            0.115824,
+            0.077135999,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.66597596,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 26,
+        "name": "Screen_Cover",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Screen_Cover"
+        ],
+        "mesh": 22,
+        "bounds": {
+          "min": [
+            -0.077370428,
+            -0.0044200001,
+            -0.059232682
+          ],
+          "max": [
+            -0.0033295741,
+            -0.0044200001,
+            0.059232682
+          ],
+          "dimensions": [
+            0.074040853,
+            0,
+            0.11846536
+          ],
+          "sortedDimensions": [
+            0.11846536,
+            0.074040853,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.62500001,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 27,
+        "name": "Screen_Main_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Screen_Main_Right"
+        ],
+        "mesh": 23,
+        "bounds": {
+          "min": [
+            -0.077215999,
+            0.00012,
+            -0.057912
+          ],
+          "max": [
+            -0.000079999998,
+            0.00012,
+            0.057912
+          ],
+          "dimensions": [
+            0.077135999,
+            0,
+            0.115824
+          ],
+          "sortedDimensions": [
+            0.115824,
+            0.077135999,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.66597596,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      }
+    ],
+    "cameraComponents": [
+      {
+        "index": 3,
+        "name": "CameraIsland",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraIsland"
+        ],
+        "mesh": 2,
+        "bounds": {
+          "min": [
+            0.054212287,
+            -0.00496,
+            -0.056689098
+          ],
+          "max": [
+            0.074637167,
+            -0.0043549999,
+            -0.014209022
+          ],
+          "dimensions": [
+            0.02042488,
+            0.00060500018,
+            0.042480077
+          ],
+          "sortedDimensions": [
+            0.042480077,
+            0.02042488,
+            0.00060500018
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.48081081,
+            0.014241975
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 4,
+        "name": "CameraLens_UltraWide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraLens_UltraWide"
+        ],
+        "mesh": 3,
+        "bounds": {
+          "min": [
+            0.057584862,
+            -0.0052999999,
+            -0.037400601
+          ],
+          "max": [
+            0.071264599,
+            -0.0051799999,
+            -0.023720863
+          ],
+          "dimensions": [
+            0.013679737,
+            0.00012,
+            0.013679737
+          ],
+          "sortedDimensions": [
+            0.013679737,
+            0.013679737,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.0087720981
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 5,
+        "name": "CameraLens_Wide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraLens_Wide"
+        ],
+        "mesh": 4,
+        "bounds": {
+          "min": [
+            0.057584862,
+            -0.0052999999,
+            -0.053209257
+          ],
+          "max": [
+            0.071264599,
+            -0.0051799999,
+            -0.03952952
+          ],
+          "dimensions": [
+            0.013679737,
+            0.00012,
+            0.013679737
+          ],
+          "sortedDimensions": [
+            0.013679737,
+            0.013679737,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.0087720981
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 6,
+        "name": "CameraRing_UltraWide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraRing_UltraWide"
+        ],
+        "mesh": 5,
+        "bounds": {
+          "min": [
+            0.056896834,
+            -0.00518,
+            -0.038088629
+          ],
+          "max": [
+            0.071952628,
+            -0.00472,
+            -0.023032835
+          ],
+          "dimensions": [
+            0.015055794,
+            0.00046000001,
+            0.015055794
+          ],
+          "sortedDimensions": [
+            0.015055794,
+            0.015055794,
+            0.00046000001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.030553022
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 7,
+        "name": "CameraRing_Wide",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "CameraRing_Wide"
+        ],
+        "mesh": 6,
+        "bounds": {
+          "min": [
+            0.056896834,
+            -0.00518,
+            -0.053897286
+          ],
+          "max": [
+            0.071952628,
+            -0.00472,
+            -0.038841492
+          ],
+          "dimensions": [
+            0.015055794,
+            0.00046000001,
+            0.015055794
+          ],
+          "sortedDimensions": [
+            0.015055794,
+            0.015055794,
+            0.00046000001
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.030553022
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 8,
+        "name": "Flash",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly",
+          "Flash"
+        ],
+        "mesh": 7,
+        "bounds": {
+          "min": [
+            0.062321883,
+            -0.0052100002,
+            -0.021483472
+          ],
+          "max": [
+            0.066527579,
+            -0.0049900002,
+            -0.017277775
+          ],
+          "dimensions": [
+            0.0042056963,
+            0.00022,
+            0.0042056963
+          ],
+          "sortedDimensions": [
+            0.0042056963,
+            0.0042056963,
+            0.00022
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.052310007
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 9,
+        "name": "CameraAssembly",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "CameraAssembly"
+        ],
+        "mesh": null,
+        "bounds": null
+      },
+      {
+        "index": 21,
+        "name": "Camera_Cover",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Camera_Cover"
+        ],
+        "mesh": 17,
+        "bounds": {
+          "min": [
+            -0.041400001,
+            -0.0044200001,
+            -0.05145
+          ],
+          "max": [
+            -0.039300001,
+            -0.0043000001,
+            -0.04935
+          ],
+          "dimensions": [
+            0.0020999999,
+            0.00012,
+            0.0020999999
+          ],
+          "sortedDimensions": [
+            0.0020999999,
+            0.0020999999,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.057142858
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "index": 22,
+        "name": "Camera_MainFront",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Camera_MainFront"
+        ],
+        "mesh": 18,
+        "bounds": {
+          "min": [
+            -0.041350001,
+            0.00013000001,
+            -0.051999999
+          ],
+          "max": [
+            -0.039350001,
+            0.00025,
+            -0.049999999
+          ],
+          "dimensions": [
+            0.0020000001,
+            0.00012,
+            0.0020000001
+          ],
+          "sortedDimensions": [
+            0.0020000001,
+            0.0020000001,
+            0.00012
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            1,
+            0.059999996
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      }
+    ],
+    "semanticNames": [
+      "CameraAssembly",
+      "Screen_Main_Left",
+      "LeftBody",
+      "LeftBodyPivot",
+      "Screen_Cover",
+      "Screen_Main_Right",
+      "RightBody",
+      "RightBodyPivot",
+      "HingeRoot",
+      "GalaxyZFold8"
+    ],
+    "replaceableSurfaceCandidates": [
+      {
+        "name": "Screen_Main_Left",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "LeftBodyPivot",
+          "LeftBody",
+          "Screen_Main_Left"
+        ],
+        "bounds": {
+          "min": [
+            0.000079999998,
+            0.00012,
+            -0.057912
+          ],
+          "max": [
+            0.077215999,
+            0.00012,
+            0.057912
+          ],
+          "dimensions": [
+            0.077135999,
+            0,
+            0.115824
+          ],
+          "sortedDimensions": [
+            0.115824,
+            0.077135999,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.66597596,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "name": "Screen_Cover",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Screen_Cover"
+        ],
+        "bounds": {
+          "min": [
+            -0.077370428,
+            -0.0044200001,
+            -0.059232682
+          ],
+          "max": [
+            -0.0033295741,
+            -0.0044200001,
+            0.059232682
+          ],
+          "dimensions": [
+            0.074040853,
+            0,
+            0.11846536
+          ],
+          "sortedDimensions": [
+            0.11846536,
+            0.074040853,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.62500001,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      },
+      {
+        "name": "Screen_Main_Right",
+        "path": [
+          "GalaxyZFold8",
+          "HingeRoot",
+          "RightBodyPivot",
+          "RightBody",
+          "Screen_Main_Right"
+        ],
+        "bounds": {
+          "min": [
+            -0.077215999,
+            0.00012,
+            -0.057912
+          ],
+          "max": [
+            -0.000079999998,
+            0.00012,
+            0.057912
+          ],
+          "dimensions": [
+            0.077135999,
+            0,
+            0.115824
+          ],
+          "sortedDimensions": [
+            0.115824,
+            0.077135999,
+            0
+          ],
+          "normalizedSortedDimensions": [
+            1,
+            0.66597596,
+            0
+          ],
+          "units": "unknown",
+          "confidence": "measured",
+          "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+        }
+      }
+    ]
+  },
+  "materials": [
+    {
+      "index": 0,
+      "name": "Hinge_Metal",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.1899999976158142,
+        0.20000000298023224,
+        0.2199999988079071,
+        1
+      ],
+      "metallicFactor": 0.8199999928474426,
+      "roughnessFactor": 0.25,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 1,
+      "name": "Display_Glass",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.012000000104308128,
+        0.014000000432133675,
+        0.017999999225139618,
+        1
+      ],
+      "metallicFactor": 0.2199999988079071,
+      "roughnessFactor": 0.20000000298023224,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 2,
+      "name": "Graphite_Frame",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.1599999964237213,
+        0.17000000178813934,
+        0.1899999976158142,
+        1
+      ],
+      "metallicFactor": 0.7799999713897705,
+      "roughnessFactor": 0.27000001072883606,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 3,
+      "name": "Camera_Lens_Glass",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.012000000104308128,
+        0.02500000037252903,
+        0.04399999976158142,
+        1
+      ],
+      "metallicFactor": 0.5199999809265137,
+      "roughnessFactor": 0.14000000059604645,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 4,
+      "name": "Camera_Ring",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.25999999046325684,
+        0.2800000011920929,
+        0.3100000023841858,
+        1
+      ],
+      "metallicFactor": 0.8799999952316284,
+      "roughnessFactor": 0.2199999988079071,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 5,
+      "name": "Flash_Diffuser",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.7599999904632568,
+        0.7200000286102295,
+        0.5899999737739563,
+        1
+      ],
+      "metallicFactor": 0.07999999821186066,
+      "roughnessFactor": 0.30000001192092896,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 6,
+      "name": "Graphite_Rear_Panel",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.10499999672174454,
+        0.1120000034570694,
+        0.12800000607967377,
+        1
+      ],
+      "metallicFactor": 0.2800000011920929,
+      "roughnessFactor": 0.3400000035762787,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 7,
+      "name": "Screen_Surface",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.003000000026077032,
+        0.004999999888241291,
+        0.008999999612569809,
+        1
+      ],
+      "metallicFactor": 0.03999999910593033,
+      "roughnessFactor": 0.20000000298023224,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    },
+    {
+      "index": 8,
+      "name": "Ports_And_Details",
+      "includedInAnalysis": true,
+      "baseColorFactor": [
+        0.00800000037997961,
+        0.008999999612569809,
+        0.010999999940395355,
+        1
+      ],
+      "metallicFactor": 0.25,
+      "roughnessFactor": 0.3199999928474426,
+      "alphaMode": "OPAQUE",
+      "alphaCutoff": null,
+      "doubleSided": true,
+      "textureSlots": {},
+      "extensions": []
+    }
+  ],
+  "textures": [],
+  "largeTextureWarnings": [],
+  "productGeometry": {
+    "cameraComponents": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 3,
+          "name": "CameraIsland",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraIsland"
+          ]
+        },
+        {
+          "index": 4,
+          "name": "CameraLens_UltraWide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraLens_UltraWide"
+          ]
+        },
+        {
+          "index": 5,
+          "name": "CameraLens_Wide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraLens_Wide"
+          ]
+        },
+        {
+          "index": 6,
+          "name": "CameraRing_UltraWide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraRing_UltraWide"
+          ]
+        },
+        {
+          "index": 7,
+          "name": "CameraRing_Wide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraRing_Wide"
+          ]
+        },
+        {
+          "index": 8,
+          "name": "Flash",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "Flash"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          0.054212287,
+          -0.0052999999,
+          -0.056689098
+        ],
+        "max": [
+          0.074637167,
+          -0.0043549999,
+          -0.014209022
+        ],
+        "dimensions": [
+          0.02042488,
+          0.000945,
+          0.042480076
+        ],
+        "sortedDimensions": [
+          0.042480076,
+          0.02042488,
+          0.000945
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.48081082,
+          0.022245723
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.26319748
+    },
+    "hingeComponents": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 0,
+          "name": "Hinge_Exterior",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "Hinge",
+            "Hinge_Exterior"
+          ]
+        },
+        {
+          "index": 10,
+          "name": "HingeRearRail_Left",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "HingeRearRail_Left"
+          ]
+        },
+        {
+          "index": 23,
+          "name": "HingeRearRail_Right",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "RightBodyPivot",
+            "RightBody",
+            "HingeRearRail_Right"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.0036154552,
+          -0.0044049998,
+          -0.061949998
+        ],
+        "max": [
+          0.0036154552,
+          0,
+          0.061949998
+        ],
+        "dimensions": [
+          0.0072309104,
+          0.0044049998,
+          0.1239
+        ],
+        "sortedDimensions": [
+          0.1239,
+          0.0072309104,
+          0.0044049998
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.058360861,
+          0.035552865
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.76765792
+    },
+    "screenComponents": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 13,
+          "name": "Screen_Main_Left",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "Screen_Main_Left"
+          ]
+        },
+        {
+          "index": 26,
+          "name": "Screen_Cover",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "RightBodyPivot",
+            "RightBody",
+            "Screen_Cover"
+          ]
+        },
+        {
+          "index": 27,
+          "name": "Screen_Main_Right",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "RightBodyPivot",
+            "RightBody",
+            "Screen_Main_Right"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.077370428,
+          -0.0044200001,
+          -0.059232682
+        ],
+        "max": [
+          0.077215999,
+          0.00012,
+          0.059232682
+        ],
+        "dimensions": [
+          0.15458643,
+          0.0045400001,
+          0.11846536
+        ],
+        "sortedDimensions": [
+          0.15458643,
+          0.11846536,
+          0.0045400001
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.76633742,
+          0.029368685
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.95778449
+    },
+    "measurementNote": "Name-selected component envelopes are approximate inspection measurements, not official product dimensions."
+  },
+  "confidenceLegend": {
+    "measured": "directly calculated from GLB accessor bounds, metadata, or counts",
+    "inferred": "derived from context or comparison with a documented reference",
+    "approximate": "useful envelope or visual estimate with incomplete semantic boundaries",
+    "unavailable": "not extractable or not reliably normalized from this asset"
+  },
+  "analysisLimits": [
+    "Bounds use POSITION accessor min/max and do not account for morph-target displacement or skinned-pose deformation.",
+    "Summed POSITION counts are per primitive and may repeat shared accessors.",
+    "The analyzer reports file structure; it does not establish product accuracy, licensing, or front/up axis semantics."
+  ]
+}

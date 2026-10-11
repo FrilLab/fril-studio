@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-10-11T09:42:47.708Z",
+  "method": {
+    "previousGeneratedAnalysis": "generated-previous.json, analyzed from the pre-rebuild GLB snapshot",
+    "currentGeneratedAnalysis": "generated.json",
+    "referenceAnalysis": "reference.json, selected root SAMSUNG Galaxy Z Fold8_22",
+    "bodyMapping": "Generated LeftFrame width=X, height=Z; reference Object_29 width=X, height=Y. Axes are identified from views and hierarchy, not assumed equal.",
+    "cameraMapping": "Analyzer rear camera envelope uses name-matched camera/lens/flash nodes and excludes front/cover camera paths.",
+    "normalization": "Component dimensions and edge offsets are divided by the corresponding measured body leaf, body height, or camera envelope. Raw coordinates and source units are not compared.",
+    "confidence": "Analyzer bounds are measured from files; component identity and reference-object semantics are approximate/inferred."
+  },
+  "diagnostic": [
+    "Camera top margin / body height had 127.15% relative error before rebuilding.",
+    "Rear hinge rail width / open body width had 100.00% relative error before rebuilding.",
+    "Camera glass diameter / camera envelope width had 33.57% relative error before rebuilding.",
+    "Camera ring diameter / camera envelope width had 26.91% relative error before rebuilding.",
+    "Camera envelope width / camera-side leaf width had 19.95% relative error before rebuilding."
+  ],
+  "features": {
+    "openBodyWidthToHeight": {
+      "label": "Open body width / height",
+      "previous": 1.3027,
+      "reference": 1.3027,
+      "new": 1.3027,
+      "previousAbsoluteDifference": 0,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 0,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 0,
+      "confidence": "measured; source units mapped by documented body bounds"
+    },
+    "cameraIslandWidthToLeafWidth": {
+      "label": "Camera envelope width / camera-side leaf width",
+      "previous": 0.3036,
+      "reference": 0.2531,
+      "new": 0.2531,
+      "previousAbsoluteDifference": 0.0505,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 19.95,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraIslandHeightToBodyHeight": {
+      "label": "Camera envelope height / body height",
+      "previous": 0.3551,
+      "reference": 0.3429,
+      "new": 0.3429,
+      "previousAbsoluteDifference": 0.0123,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 3.58,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraIslandOuterMarginToLeafWidth": {
+      "label": "Camera outer-edge margin / leaf width",
+      "previous": 0.0737,
+      "reference": 0.0751,
+      "new": 0.0751,
+      "previousAbsoluteDifference": 0.0014,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 1.86,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 99.99,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraIslandTopMarginToBodyHeight": {
+      "label": "Camera top margin / body height",
+      "previous": 0.0964,
+      "reference": 0.0425,
+      "new": 0.0425,
+      "previousAbsoluteDifference": 0.054,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 127.15,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraRingDiameterToIslandWidth": {
+      "label": "Camera ring diameter / camera envelope width",
+      "previous": 0.5388,
+      "reference": 0.7371,
+      "new": 0.7371,
+      "previousAbsoluteDifference": 0.1984,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 26.91,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraGlassDiameterToIslandWidth": {
+      "label": "Camera glass diameter / camera envelope width",
+      "previous": 0.4449,
+      "reference": 0.6698,
+      "new": 0.6698,
+      "previousAbsoluteDifference": 0.2249,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 33.57,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "lensSpacingToIslandHeight": {
+      "label": "Lens center spacing / camera envelope height",
+      "previous": 0.3682,
+      "reference": 0.3721,
+      "new": 0.3721,
+      "previousAbsoluteDifference": 0.004,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 1.06,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "flashDiameterToIslandWidth": {
+      "label": "Flash diameter / camera envelope width",
+      "previous": 0.2122,
+      "reference": 0.2059,
+      "new": 0.2059,
+      "previousAbsoluteDifference": 0.0063,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 3.08,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "hingeRearRailWidthToOpenBodyWidth": {
+      "label": "Rear hinge rail width / open body width",
+      "previous": 0,
+      "reference": 0.0449,
+      "new": 0.0448,
+      "previousAbsoluteDifference": 0.0449,
+      "newAbsoluteDifference": 0.0001,
+      "previousErrorPercent": 100,
+      "newErrorPercent": 0.26,
+      "errorReductionPercent": 99.74,
+      "confidence": "approximate; reference Object_18 interpreted as the rear hinge rail"
+    }
+  },
+  "notes": [
+    "Official open/folded body dimensions remain 161.4 × 123.9 × 4.5 mm and 81.9 × 123.9 × 9.7 mm; the generated open body bounds remain unchanged.",
+    "The reference GLB main display surface is larger than the official standard Fold8 7.6-inch 4:3 display. The generator preserves the official 7.6-inch display diagonal instead of matching the reference surface.",
+    "Camera depth was not normalized into a component target: the reference camera depth envelope conflicts with the official folded stack and has uncertain component boundaries.",
+    "Reference Object_18 is a long center rail measured in the source file; interpreting it as a rear hinge cover is inferred. The generated rail is split between the two body leaves to preserve articulation.",
+    "No reference geometry, texture, or material is reused by this report or generator."
+  ],
+  "asset": {
+    "currentGlbBytes": 272248,
+    "currentMeshCount": 31,
+    "currentPositionVerticesByPrimitive": 7974,
+    "currentTriangles": 5996,
+    "currentMaterialCount": 9
+  }
+}

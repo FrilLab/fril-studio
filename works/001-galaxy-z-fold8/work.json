@@ -1,0 +1,20 @@
+{
+  "id": "001",
+  "slug": "001-galaxy-z-fold8",
+  "title": {
+    "en": "Galaxy Z Fold8",
+    "ko": "Galaxy Z Fold8"
+  },
+  "category": {
+    "en": "Interactive 3D",
+    "ko": "인터랙티브 3D"
+  },
+  "description": {
+    "en": "A scroll-driven study of a foldable frame, its hinge, camera, and display.",
+    "ko": "폴더블 프레임의 힌지와 카메라, 디스플레이를 스크롤로 살펴봅니다."
+  },
+  "year": "2026",
+  "thumbnail": "./thumbnail.webp",
+  "entry": "./index.html",
+  "status": "published"
+}

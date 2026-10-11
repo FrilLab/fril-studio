@@ -1,0 +1,908 @@
+{
+  "schemaVersion": "1.0",
+  "provenance": {
+    "generated": {
+      "path": "works/001-galaxy-z-fold8/assets/model/exported/galaxy-z-fold8.glb",
+      "filename": "galaxy-z-fold8.glb",
+      "fileSizeBytes": 272248,
+      "sha256": "b5a41a0dd0cb104cbbfd4660459450f6256414c3a4978ac59c75fd112b0363dc",
+      "committedAssetAssessment": "record this in the work reference README; analyzer does not infer distribution rights"
+    },
+    "reference": {
+      "path": "works/001-galaxy-z-fold8/assets/model/exported/samsung_galaxy_z_fold8.glb",
+      "filename": "samsung_galaxy_z_fold8.glb",
+      "fileSizeBytes": 1776140,
+      "sha256": "b9971323c5c88d7ec9eca4d7a991f0fda097af8c3c34a77ffc16ef668812ea7d",
+      "committedAssetAssessment": "record this in the work reference README; analyzer does not infer distribution rights"
+    },
+    "differenceDirection": "reference minus generated",
+    "legalNote": "This comparison stores derived measurements and metadata only; it does not contain reference geometry, textures, or materials."
+  },
+  "normalization": {
+    "units": "unknown unless separately documented by the work",
+    "orientation": "product-facing axes were not normalized automatically",
+    "method": "compare sorted AABB extents normalized by their longest dimension; verify front/up/origin visually before interpreting proportions",
+    "rawDimensionDifferences": "omitted because source units and orientation are not known to match"
+  },
+  "overall": {
+    "generated": {
+      "bounds": {
+        "min": [
+          -0.080700003,
+          -0.0052999999,
+          -0.061949999
+        ],
+        "max": [
+          0.080700003,
+          0.00025,
+          0.061949999
+        ],
+        "dimensions": [
+          0.16140001,
+          0.0055499999,
+          0.1239
+        ],
+        "sortedDimensions": [
+          0.16140001,
+          0.1239,
+          0.0055499999
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.76765795,
+          0.034386615
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates",
+        "coordinateConvention": "glTF is right-handed and Y-up; product-facing axes are not inferred from the file convention."
+      },
+      "fileSizeBytes": 272248
+    },
+    "reference": {
+      "bounds": {
+        "min": [
+          -0.050240392,
+          -0.061950002,
+          0.00065612123
+        ],
+        "max": [
+          0.11157545,
+          0.061950002,
+          0.011136936
+        ],
+        "dimensions": [
+          0.16181584,
+          0.1239,
+          0.010480814
+        ],
+        "sortedDimensions": [
+          0.16181584,
+          0.1239,
+          0.010480814
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.76568528,
+          0.064770016
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates",
+        "coordinateConvention": "glTF is right-handed and Y-up; product-facing axes are not inferred from the file convention."
+      },
+      "fileSizeBytes": 1776140
+    },
+    "difference": {
+      "normalizedSortedDimensions": {
+        "status": "compared",
+        "method": "Sort each axis-aligned extent from longest to shortest, then normalize by the longest extent.",
+        "caveat": "This avoids unit mismatches but does not correct arbitrary rotations or shear; orientation should be visually verified first.",
+        "generated": [
+          1,
+          0.76765795,
+          0.034386615
+        ],
+        "reference": [
+          1,
+          0.76568528,
+          0.064770016
+        ],
+        "referenceMinusGenerated": [
+          0,
+          -0.00197267,
+          0.030383401
+        ],
+        "relativePercentDifference": [
+          0,
+          -0.256973,
+          88.3582
+        ]
+      },
+      "fileSizeBytes": {
+        "referenceMinusGenerated": 1503892,
+        "percentageFromGenerated": 552.398,
+        "ratioReferenceToGenerated": 6.5239781
+      }
+    }
+  },
+  "cameraModule": {
+    "generated": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 3,
+          "name": "CameraIsland",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraIsland"
+          ]
+        },
+        {
+          "index": 4,
+          "name": "CameraLens_UltraWide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraLens_UltraWide"
+          ]
+        },
+        {
+          "index": 5,
+          "name": "CameraLens_Wide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraLens_Wide"
+          ]
+        },
+        {
+          "index": 6,
+          "name": "CameraRing_UltraWide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraRing_UltraWide"
+          ]
+        },
+        {
+          "index": 7,
+          "name": "CameraRing_Wide",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "CameraRing_Wide"
+          ]
+        },
+        {
+          "index": 8,
+          "name": "Flash",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "CameraAssembly",
+            "Flash"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          0.054212287,
+          -0.0052999999,
+          -0.056689098
+        ],
+        "max": [
+          0.074637167,
+          -0.0043549999,
+          -0.014209022
+        ],
+        "dimensions": [
+          0.02042488,
+          0.000945,
+          0.042480076
+        ],
+        "sortedDimensions": [
+          0.042480076,
+          0.02042488,
+          0.000945
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.48081082,
+          0.022245723
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.26319748
+    },
+    "reference": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 7,
+          "name": "Object_7",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera block.001_1",
+            "Object_7"
+          ]
+        },
+        {
+          "index": 9,
+          "name": "Object_9",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera block.002_2",
+            "Object_9"
+          ]
+        },
+        {
+          "index": 11,
+          "name": "Object_11",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera block.003_3",
+            "Object_11"
+          ]
+        },
+        {
+          "index": 13,
+          "name": "Object_13",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera.007_4",
+            "Object_13"
+          ]
+        },
+        {
+          "index": 14,
+          "name": "Object_14",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera.007_4",
+            "Object_14"
+          ]
+        },
+        {
+          "index": 15,
+          "name": "Object_15",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera.007_4",
+            "Object_15"
+          ]
+        },
+        {
+          "index": 16,
+          "name": "Object_16",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Camera.007_4",
+            "Object_16"
+          ]
+        },
+        {
+          "index": 38,
+          "name": "Object_38",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Flash.003_13",
+            "Object_38"
+          ]
+        },
+        {
+          "index": 39,
+          "name": "Object_39",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Flash.003_13",
+            "Object_39"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          0.084624778,
+          0.014209021,
+          0.00065612123
+        ],
+        "max": [
+          0.10504966,
+          0.056689098,
+          0.0070463505
+        ],
+        "dimensions": [
+          0.020424882,
+          0.042480077,
+          0.0063902293
+        ],
+        "sortedDimensions": [
+          0.042480077,
+          0.020424882,
+          0.0063902293
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.48081085,
+          0.15042885
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.26252113
+    },
+    "relativeLongestExtent": {
+      "generatedToBody": 0.26319748,
+      "referenceToBody": 0.26252113,
+      "difference": {
+        "referenceMinusGenerated": -0.00067635,
+        "percentageFromGenerated": -0.256974,
+        "ratioReferenceToGenerated": 0.99743026
+      },
+      "confidence": "approximate",
+      "caveat": "Keyword-selected bounds can include different component sets and are not official dimensions."
+    }
+  },
+  "hinge": {
+    "generated": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 0,
+          "name": "Hinge_Exterior",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "Hinge",
+            "Hinge_Exterior"
+          ]
+        },
+        {
+          "index": 10,
+          "name": "HingeRearRail_Left",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "HingeRearRail_Left"
+          ]
+        },
+        {
+          "index": 23,
+          "name": "HingeRearRail_Right",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "RightBodyPivot",
+            "RightBody",
+            "HingeRearRail_Right"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.0036154552,
+          -0.0044049998,
+          -0.061949998
+        ],
+        "max": [
+          0.0036154552,
+          0,
+          0.061949998
+        ],
+        "dimensions": [
+          0.0072309104,
+          0.0044049998,
+          0.1239
+        ],
+        "sortedDimensions": [
+          0.1239,
+          0.0072309104,
+          0.0044049998
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.058360861,
+          0.035552865
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.76765792
+    },
+    "reference": {
+      "status": "unavailable",
+      "confidence": "unavailable",
+      "reason": "No named mesh nodes matched the component query."
+    },
+    "relativeLongestExtent": {
+      "status": "unavailable",
+      "reason": "Both analyses need a name-selected component envelope."
+    }
+  },
+  "screen": {
+    "generated": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 13,
+          "name": "Screen_Main_Left",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "LeftBodyPivot",
+            "LeftBody",
+            "Screen_Main_Left"
+          ]
+        },
+        {
+          "index": 26,
+          "name": "Screen_Cover",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "RightBodyPivot",
+            "RightBody",
+            "Screen_Cover"
+          ]
+        },
+        {
+          "index": 27,
+          "name": "Screen_Main_Right",
+          "path": [
+            "GalaxyZFold8",
+            "HingeRoot",
+            "RightBodyPivot",
+            "RightBody",
+            "Screen_Main_Right"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.077370428,
+          -0.0044200001,
+          -0.059232682
+        ],
+        "max": [
+          0.077215999,
+          0.00012,
+          0.059232682
+        ],
+        "dimensions": [
+          0.15458643,
+          0.0045400001,
+          0.11846536
+        ],
+        "sortedDimensions": [
+          0.15458643,
+          0.11846536,
+          0.0045400001
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.76633742,
+          0.029368685
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.95778449
+    },
+    "reference": {
+      "status": "available",
+      "confidence": "approximate",
+      "method": "Bounds union of meshes selected by node-name keywords; not a verified product datum.",
+      "matchedNodes": [
+        {
+          "index": 47,
+          "name": "Object_47",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen_17",
+            "Object_47"
+          ]
+        },
+        {
+          "index": 48,
+          "name": "Object_48",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen_17",
+            "Object_48"
+          ]
+        },
+        {
+          "index": 50,
+          "name": "Object_50",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen.001_18",
+            "Object_50"
+          ]
+        },
+        {
+          "index": 51,
+          "name": "Object_51",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen.001_18",
+            "Object_51"
+          ]
+        },
+        {
+          "index": 53,
+          "name": "Object_53",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen.002_19",
+            "Object_53"
+          ]
+        },
+        {
+          "index": 54,
+          "name": "Object_54",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen.002_19",
+            "Object_54"
+          ]
+        },
+        {
+          "index": 56,
+          "name": "Object_56",
+          "path": [
+            "Sketchfab_model",
+            "root",
+            "GLTF_SceneRootNode",
+            "SAMSUNG Galaxy Z Fold8_22",
+            "Screen.003_20",
+            "Object_56"
+          ]
+        }
+      ],
+      "bounds": {
+        "min": [
+          -0.049205365,
+          -0.060884602,
+          0.0091048307
+        ],
+        "max": [
+          0.11006383,
+          0.060884602,
+          0.010266327
+        ],
+        "dimensions": [
+          0.1592692,
+          0.1217692,
+          0.0011614963
+        ],
+        "sortedDimensions": [
+          0.1592692,
+          0.1217692,
+          0.0011614963
+        ],
+        "normalizedSortedDimensions": [
+          1,
+          0.76454963,
+          0.0072926613
+        ],
+        "units": "unknown",
+        "confidence": "measured",
+        "method": "POSITION accessor min/max corners transformed by the node world matrix; rotated local bounds are conservative box estimates"
+      },
+      "longestExtentToBodyLongestExtent": 0.98426208
+    },
+    "relativeLongestExtent": {
+      "generatedToBody": 0.95778449,
+      "referenceToBody": 0.98426208,
+      "difference": {
+        "referenceMinusGenerated": 0.02647759,
+        "percentageFromGenerated": 2.76446,
+        "ratioReferenceToGenerated": 1.0276446
+      },
+      "confidence": "approximate",
+      "caveat": "Keyword-selected bounds can include different component sets and are not official dimensions."
+    }
+  },
+  "complexity": {
+    "generated": {
+      "vertices": 7974,
+      "triangles": 5996,
+      "nodes": 39,
+      "meshes": 31,
+      "materials": 9,
+      "textures": 0
+    },
+    "reference": {
+      "vertices": 14336,
+      "triangles": 15117,
+      "nodes": 58,
+      "meshes": 35,
+      "materials": 13,
+      "textures": 3
+    },
+    "difference": {
+      "vertices": {
+        "referenceMinusGenerated": 6362,
+        "percentageFromGenerated": 79.7843,
+        "ratioReferenceToGenerated": 1.797843
+      },
+      "triangles": {
+        "referenceMinusGenerated": 9121,
+        "percentageFromGenerated": 152.118,
+        "ratioReferenceToGenerated": 2.5211808
+      },
+      "nodes": {
+        "referenceMinusGenerated": 19,
+        "percentageFromGenerated": 48.7179,
+        "ratioReferenceToGenerated": 1.4871795
+      },
+      "meshes": {
+        "referenceMinusGenerated": 4,
+        "percentageFromGenerated": 12.9032,
+        "ratioReferenceToGenerated": 1.1290323
+      },
+      "materials": {
+        "referenceMinusGenerated": 4,
+        "percentageFromGenerated": 44.4444,
+        "ratioReferenceToGenerated": 1.4444444
+      },
+      "textures": {
+        "referenceMinusGenerated": 3,
+        "percentageFromGenerated": null,
+        "ratioReferenceToGenerated": null
+      }
+    }
+  },
+  "hierarchy": {
+    "generated": {
+      "semanticNames": [
+        "CameraAssembly",
+        "GalaxyZFold8",
+        "HingeRoot",
+        "LeftBody",
+        "LeftBodyPivot",
+        "RightBody",
+        "RightBodyPivot",
+        "Screen_Cover",
+        "Screen_Main_Left",
+        "Screen_Main_Right"
+      ],
+      "nodeCount": 39
+    },
+    "reference": {
+      "semanticNames": [],
+      "nodeCount": 58
+    },
+    "sharedSemanticNames": [],
+    "generatedOnlyNames": [
+      "CameraAssembly",
+      "GalaxyZFold8",
+      "HingeRoot",
+      "LeftBody",
+      "LeftBodyPivot",
+      "RightBody",
+      "RightBodyPivot",
+      "Screen_Cover",
+      "Screen_Main_Left",
+      "Screen_Main_Right"
+    ],
+    "referenceOnlyNames": [],
+    "note": "Node-name matches are exact; similarly named or structurally equivalent nodes require a work-specific mapping."
+  },
+  "confidence": {
+    "sceneBounds": "measured from GLB accessor bounds and node transforms; units remain unknown",
+    "complexity": "measured from glTF accessors and document arrays",
+    "componentBounds": "approximate because selected by node-name keywords",
+    "normalizedProportion": "inferred comparison pending orientation review"
+  },
+  "featureImprovements": {
+    "openBodyWidthToHeight": {
+      "label": "Open body width / height",
+      "previous": 1.3027,
+      "reference": 1.3027,
+      "new": 1.3027,
+      "previousAbsoluteDifference": 0,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 0,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 0,
+      "confidence": "measured; source units mapped by documented body bounds"
+    },
+    "cameraIslandWidthToLeafWidth": {
+      "label": "Camera envelope width / camera-side leaf width",
+      "previous": 0.3036,
+      "reference": 0.2531,
+      "new": 0.2531,
+      "previousAbsoluteDifference": 0.0505,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 19.95,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraIslandHeightToBodyHeight": {
+      "label": "Camera envelope height / body height",
+      "previous": 0.3551,
+      "reference": 0.3429,
+      "new": 0.3429,
+      "previousAbsoluteDifference": 0.0123,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 3.58,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraIslandOuterMarginToLeafWidth": {
+      "label": "Camera outer-edge margin / leaf width",
+      "previous": 0.0737,
+      "reference": 0.0751,
+      "new": 0.0751,
+      "previousAbsoluteDifference": 0.0014,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 1.86,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 99.99,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraIslandTopMarginToBodyHeight": {
+      "label": "Camera top margin / body height",
+      "previous": 0.0964,
+      "reference": 0.0425,
+      "new": 0.0425,
+      "previousAbsoluteDifference": 0.054,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 127.15,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraRingDiameterToIslandWidth": {
+      "label": "Camera ring diameter / camera envelope width",
+      "previous": 0.5388,
+      "reference": 0.7371,
+      "new": 0.7371,
+      "previousAbsoluteDifference": 0.1984,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 26.91,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "cameraGlassDiameterToIslandWidth": {
+      "label": "Camera glass diameter / camera envelope width",
+      "previous": 0.4449,
+      "reference": 0.6698,
+      "new": 0.6698,
+      "previousAbsoluteDifference": 0.2249,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 33.57,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "lensSpacingToIslandHeight": {
+      "label": "Lens center spacing / camera envelope height",
+      "previous": 0.3682,
+      "reference": 0.3721,
+      "new": 0.3721,
+      "previousAbsoluteDifference": 0.004,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 1.06,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "flashDiameterToIslandWidth": {
+      "label": "Flash diameter / camera envelope width",
+      "previous": 0.2122,
+      "reference": 0.2059,
+      "new": 0.2059,
+      "previousAbsoluteDifference": 0.0063,
+      "newAbsoluteDifference": 0,
+      "previousErrorPercent": 3.08,
+      "newErrorPercent": 0,
+      "errorReductionPercent": 100,
+      "confidence": "approximate; measured analyzer bounds with medium-confidence semantic mapping"
+    },
+    "hingeRearRailWidthToOpenBodyWidth": {
+      "label": "Rear hinge rail width / open body width",
+      "previous": 0,
+      "reference": 0.0449,
+      "new": 0.0448,
+      "previousAbsoluteDifference": 0.0449,
+      "newAbsoluteDifference": 0.0001,
+      "previousErrorPercent": 100,
+      "newErrorPercent": 0.26,
+      "errorReductionPercent": 99.74,
+      "confidence": "approximate; reference Object_18 interpreted as the rear hinge rail"
+    }
+  },
+  "featureImprovementMethod": {
+    "previousGeneratedAnalysis": "generated-previous.json, analyzed from the pre-rebuild GLB snapshot",
+    "currentGeneratedAnalysis": "generated.json",
+    "referenceAnalysis": "reference.json, selected root SAMSUNG Galaxy Z Fold8_22",
+    "bodyMapping": "Generated LeftFrame width=X, height=Z; reference Object_29 width=X, height=Y. Axes are identified from views and hierarchy, not assumed equal.",
+    "cameraMapping": "Analyzer rear camera envelope uses name-matched camera/lens/flash nodes and excludes front/cover camera paths.",
+    "normalization": "Component dimensions and edge offsets are divided by the corresponding measured body leaf, body height, or camera envelope. Raw coordinates and source units are not compared.",
+    "confidence": "Analyzer bounds are measured from files; component identity and reference-object semantics are approximate/inferred."
+  }
+}

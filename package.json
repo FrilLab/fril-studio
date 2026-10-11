@@ -8,7 +8,9 @@
     "build": "vite build && node scripts/copy-works.mjs",
     "lint": "eslint .",
     "test": "vitest run",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "model:analyze": "node scripts/model/analyze-glb.mjs",
+    "model:compare": "node scripts/model/compare-glb.mjs"
   },
   "dependencies": {
     "react": "^19.3.0",

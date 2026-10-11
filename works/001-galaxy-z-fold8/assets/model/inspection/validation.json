@@ -1,6 +1,36 @@
 {
   "blender_version": "5.2.2 LTS",
   "model": "Unofficial Galaxy Z Fold8 exterior concept for Fril Studio",
+  "evidence": {
+    "official_dimensions_source": "https://www.samsung.com/uk/support/mobile-devices/what-is-the-difference-between-the-galaxy-z-fold-models/",
+    "official_display_source": "https://www.samsung.com/us/smartphones/galaxy-z-fold8/",
+    "qualitative_edge_curvature_source": "https://www.design.samsung.com/global/contents/view/galaxy-z8",
+    "hinge_corner_radius": {
+      "value_mm": 0.6,
+      "confidence": "approximate visual inference; kept tighter than exposed corners after reviewing folded and hinge-close renders"
+    },
+    "reference_asset": "assets/model/exported/samsung_galaxy_z_fold8.glb",
+    "reference_root": "SAMSUNG Galaxy Z Fold8_22",
+    "reference_analysis": "assets/model/inspection/analysis/reference.json",
+    "reference_camera_ratios": {
+      "camera_island_width_to_half_body": 0.25309643,
+      "camera_island_height_to_body": 0.34285776,
+      "outer_margin_to_half_body": 0.075128,
+      "top_margin_to_body": 0.04246087,
+      "confidence": "medium; name-selected camera envelopes normalized against the selected reference body leaf"
+    },
+    "reference_hinge_rail": {
+      "width_to_open_body": 0.04480118,
+      "height_to_body": 0.98429798,
+      "confidence": "medium; measured long center rail interpreted as two articulated rear hinge-cover halves"
+    },
+    "camera_depth_layers_mm": {
+      "island_protrusion": 0.58,
+      "ring_back_offset": 0.57,
+      "glass_back_offset": 0.86,
+      "confidence": "approximate Fril-owned layering; reference depth was excluded from normalization"
+    }
+  },
   "dimensions_mm": {
     "open_body": [
       161.4,
@@ -64,11 +94,16 @@
   },
   "runtime_nodes": [
     "CameraAssembly",
+    "CameraIsland",
     "CameraLens_UltraWide",
     "CameraLens_Wide",
+    "CameraRing_UltraWide",
+    "CameraRing_Wide",
     "Flash",
     "GalaxyZFold8",
     "Hinge",
+    "HingeRearRail_Left",
+    "HingeRearRail_Right",
     "HingeRoot",
     "LeftBody",
     "LeftBodyPivot",
@@ -78,12 +113,12 @@
     "Screen_Main_Left",
     "Screen_Main_Right"
   ],
-  "mesh_object_count": 29,
-  "asset_object_count_including_groups": 37,
-  "vertex_count_evaluated": 3016,
-  "triangle_count_evaluated": 5780,
-  "glb_size_bytes": 264872,
-  "glb_size_mib": 0.2526,
+  "mesh_object_count": 31,
+  "asset_object_count_including_groups": 39,
+  "vertex_count_evaluated": 3128,
+  "triangle_count_evaluated": 5996,
+  "glb_size_bytes": 272248,
+  "glb_size_mib": 0.2596,
   "previews": [
     "inspection/01-unfolded-front.png",
     "inspection/02-unfolded-rear.png",
