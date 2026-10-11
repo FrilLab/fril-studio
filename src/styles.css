@@ -199,10 +199,6 @@ summary:focus-visible {
 .about-label > span,
 .work-number,
 .work-meta,
-.work-status,
-.artwork-label,
-.artwork-note,
-.artwork-coordinates,
 .footer {
   font-size: 0.67rem;
   letter-spacing: 0.12em;
@@ -336,184 +332,78 @@ html[lang="ko"] .hero h1 {
   grid-column: 1 / -1;
 }
 
-.artwork {
+.work-preview {
   position: relative;
-  display: block;
+  display: flex;
   overflow: hidden;
-  aspect-ratio: 1.23;
+  aspect-ratio: 1.5;
+  align-items: center;
+  justify-content: center;
   isolation: isolate;
+  background: #191b1d;
+  color: var(--paper);
+  text-decoration: none;
 }
 
-.work-item--feature .artwork {
-  aspect-ratio: 2.19;
+.work-preview:focus-visible {
+  outline-offset: 6px;
 }
 
-.artwork-label,
-.artwork-title,
-.artwork-note,
-.artwork-coordinates,
-.artwork-shape {
+.work-thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.work-preview::after {
   position: absolute;
+  z-index: 0;
+  inset: 45% 0 0;
+  content: "";
+  background: linear-gradient(transparent, rgb(0 0 0 / 38%));
+  pointer-events: none;
 }
 
-.artwork-label {
+.work-preview-link {
+  position: absolute;
   z-index: 1;
-  top: 22px;
-  left: 23px;
+  right: 24px;
+  bottom: 21px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 0.56rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
-.artwork-title {
-  z-index: 1;
-  bottom: 13%;
-  left: 7%;
-  white-space: pre-line;
-  font-size: clamp(2.3rem, 6.8vw, 6.5rem);
-  font-weight: 600;
-  letter-spacing: -0.09em;
-  line-height: 0.83;
+.work-preview-link span {
+  font-size: 1rem;
+  transition: transform 250ms ease;
 }
 
-.work-item:not(.work-item--feature) .artwork-title {
-  bottom: 14%;
-  left: 9%;
-  font-size: clamp(2rem, 4vw, 3.6rem);
+.work-preview-fallback {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background: #191b1d;
 }
 
-.artwork-note,
-.artwork-coordinates {
-  z-index: 1;
-  bottom: 25px;
-  font-size: 0.54rem;
+.work-preview-fallback span:first-child {
+  color: var(--muted);
+  font-size: 0.58rem;
   letter-spacing: 0.12em;
 }
 
-.artwork-note {
-  left: 23px;
-}
-
-.artwork-coordinates {
-  right: 23px;
-}
-
-.artwork-shape {
-  z-index: -1;
-  transition: transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
-}
-
-.artwork--form {
-  background: #d8d8d0;
-  color: #20211e;
-}
-
-.artwork--form .artwork-title {
-  left: 8%;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(5rem, 14vw, 13.5rem);
-  font-weight: 400;
-  letter-spacing: -0.11em;
-}
-
-.artwork--form .artwork-shape {
-  top: 50%;
-  right: 13%;
-  width: min(34vw, 410px);
-  aspect-ratio: 1;
-  transform: translateY(-50%);
-  border: 1px solid #8b8d85;
-  border-radius: 50%;
-}
-
-.artwork--form .artwork-shape::before,
-.artwork--form .artwork-shape::after {
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-}
-
-.artwork--form .artwork-shape::before {
-  inset: 15%;
-  border: 1px solid #a5a69e;
-}
-
-.artwork--form .artwork-shape::after {
-  top: 12%;
-  left: 37%;
-  width: 25%;
-  aspect-ratio: 1;
-  background: #aaa99f;
-}
-
-.artwork--story {
-  background: #c95b3c;
-  color: #331f1b;
-}
-
-.artwork--story .artwork-shape {
-  top: 15%;
-  right: 14%;
-  width: 58%;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: #df966d;
-}
-
-.artwork--story .artwork-shape::before {
-  position: absolute;
-  top: 50%;
-  left: -31%;
-  width: 162%;
-  height: 1px;
-  content: "";
-  transform: rotate(-35deg);
-  background: #843d2c;
-}
-
-.artwork--objects {
-  background: #1e2830;
-  color: #e1ded4;
-}
-
-.artwork--objects .artwork-shape {
-  top: 17%;
-  left: 50%;
-  width: 52%;
-  aspect-ratio: 1;
-  transform: translateX(-50%) rotate(30deg) skew(-8deg, -8deg);
-  border: 1px solid #b2bcb8;
-  background: linear-gradient(135deg, #a3b5b5 0%, #50656b 45%, #25333b 46%, #172127 100%);
-  box-shadow: 25px 23px 0 -1px #1e2830, 25px 23px 0 0 #738087;
-}
-
-.artwork--play {
-  background: #c4d2a4;
-  color: #263322;
-}
-
-.artwork--play .artwork-shape {
-  top: 12%;
-  right: 13%;
-  width: 59%;
-  aspect-ratio: 1;
-  border: 1px solid #65734e;
-  border-radius: 50%;
-}
-
-.artwork--play .artwork-shape::before {
-  position: absolute;
-  right: -8%;
-  bottom: 13%;
-  width: 42%;
-  aspect-ratio: 1;
-  content: "";
-  background-color: #7f9163;
-  background-image: linear-gradient(45deg, #d6dfc3 25%, transparent 25%),
-    linear-gradient(-45deg, #d6dfc3 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #d6dfc3 75%),
-    linear-gradient(-45deg, transparent 75%, #d6dfc3 75%);
-  background-position: 0 0, 0 0.5em, 0.5em -0.5em, -0.5em 0;
-  background-size: 1em 1em;
+.work-preview-fallback span:last-child {
+  max-width: 70%;
+  font-size: clamp(2rem, 5vw, 5rem);
+  letter-spacing: -0.065em;
 }
 
 .work-caption {
@@ -547,11 +437,31 @@ html[lang="ko"] .hero h1 {
   letter-spacing: 0.09em;
 }
 
-.work-status {
-  margin: 14px 0 0 38px;
+.work-description {
+  max-width: 620px;
+  margin: 12px 0 0 38px;
   color: var(--quiet);
-  font-size: 0.54rem;
-  letter-spacing: 0.12em;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.works-empty {
+  padding: 56px 0 20px;
+  border-top: 1px solid var(--rule);
+}
+
+.works-empty h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.6rem);
+  font-weight: 450;
+  letter-spacing: -0.055em;
+}
+
+.works-empty p {
+  max-width: 520px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .collection-note {
@@ -625,16 +535,12 @@ html[lang="ko"] .hero h1 {
 }
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .work-item:hover .artwork-shape {
-    transform: translateY(-50%) scale(1.045);
+  .work-preview:hover .work-thumbnail {
+    transform: scale(1.025);
   }
 
-  .work-item:not(.work-item--feature):hover .artwork-shape {
-    transform: scale(1.045);
-  }
-
-  .work-item:not(.work-item--feature):hover .artwork--objects .artwork-shape {
-    transform: translateX(-50%) rotate(30deg) skew(-8deg, -8deg) scale(1.045);
+  .work-preview:hover .work-preview-link span {
+    transform: translate(2px, -2px);
   }
 }
 
@@ -656,8 +562,8 @@ html[lang="ko"] .hero h1 {
     grid-column: 1 / -1;
   }
 
-  .work-item--feature .artwork {
-    aspect-ratio: 1.75;
+  .work-preview {
+    aspect-ratio: 1.35;
   }
 
   .about {
@@ -815,51 +721,30 @@ html[lang="ko"] .hero h1 {
     grid-column: auto;
   }
 
-  .work-item--feature .artwork {
+  .work-preview {
     aspect-ratio: 1.12;
   }
 
-  .artwork {
-    aspect-ratio: 1.18;
-  }
-
-  .artwork-label {
-    top: 17px;
-    left: 17px;
-    font-size: 0.48rem;
-  }
-
-  .artwork--form .artwork-title {
-    bottom: 16%;
-    left: 7%;
-    font-size: clamp(4.8rem, 23vw, 7.5rem);
-  }
-
-  .artwork--form .artwork-shape {
-    right: 7%;
-    width: 61%;
-  }
-
-  .work-item:not(.work-item--feature) .artwork-title {
-    font-size: clamp(2.5rem, 12vw, 3.7rem);
-  }
-
-  .artwork-note,
-  .artwork-coordinates {
-    bottom: 18px;
-    font-size: 0.48rem;
-  }
-
-  .artwork-note {
-    left: 17px;
-  }
-
-  .artwork-coordinates {
+  .work-preview-link {
     right: 17px;
+    bottom: 16px;
+    font-size: 0.49rem;
+  }
+
+  .work-preview-fallback {
+    padding: 18px;
+  }
+
+  .work-preview-fallback span:first-child {
+    font-size: 0.48rem;
   }
 
   .work-caption h3 {
     font-size: 1.14rem;
+  }
+
+  .work-description {
+    margin-left: 0;
   }
 
   .collection-note {

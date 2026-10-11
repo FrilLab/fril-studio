@@ -1,70 +1,93 @@
 # Fril Studio
 
-Fril Studio explores interactive web experiences that combine code, motion, storytelling, and play.
-
-The studio site is the gallery and entry point. Each work is an independent experience that can use the tools and visual language that fit it. Works may be linked directly from social posts and opened at their own URLs.
-
-## Project status
-
-The repository contains the initial studio shell and project conventions. The first production work and the studio's visual design are planned separately.
+Fril Studio is an independent web studio exploring interactive experiences
+made with code, motion, storytelling, and play. The root site is the studio
+index; each published experience under `works/` is an independent browser page.
 
 ## Technology
 
-The studio site uses React, TypeScript, Vite, and CSS. The dependency set is intentionally small. Individual works may use plain HTML, CSS, and JavaScript or other web technologies such as GSAP, Three.js, Canvas, WebGL, or React. A work does not need to become a React route.
-
-## Languages and translations
-
-The studio shell supports English (`en`) and Korean (`ko`). On a first visit it uses Korean when the browser's preferred language is Korean, and English otherwise. Choosing `EN` or `KO` in the header stores that explicit preference in `localStorage` for later visits. Locale changes update the page copy, document language, title, and description without changing the URL.
-
-Translations live in `src/i18n/en.ts` and `src/i18n/ko.ts`; locale selection and the React context live in `src/i18n/`. A small typed React context keeps this two-language setup lightweight without adding an i18n dependency or URL routing. When adding or changing copy, add the complete phrase to both dictionaries using the same key, then reference that typed key from the studio components. Avoid composing sentence fragments so each language can use its natural word order.
-
-This localization boundary applies to the React studio shell only. Each directory under `works/` remains an independent experience and may use its own localization approach or remain in one language.
-
-## Repository structure
-
-```text
-src/                  React studio site
-works/                Independent, browser-ready experiences
-public/               Static assets copied by Vite
-docs/                 Architecture and licensing notes
-.github/workflows/    CI validation
-```
+The studio index uses React, TypeScript, and Vite. Works choose their own
+browser technologies and do not need to become React routes. The homepage reads
+only a generated manifest and static preview images. A work's JavaScript,
+Three.js runtime, models, and other experience assets load only after a visitor
+opens that work.
 
 ## Local development
 
-Use Node.js 22.12 or newer and npm.
+Use Node.js 22.12 or newer and npm:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-The development server prints its local URL. The root site is implemented in `src/`.
+The Vite development server scans `works/*/work.json`, validates the metadata,
+and makes published works available to the studio index. It watches metadata
+changes and additions/removals while running. A work can also be opened
+directly at `/works/<slug>/`; no separate copy step or server is needed.
+
+See [works/README.md](works/README.md) for the metadata contract and steps for
+adding a work.
+
+## 3D asset workflow
+
+Product-specific model evidence stays with its work under `assets/model/`.
+Shared measurement methods and reusable modeling guidance live in
+[`spec/modeling/`](spec/modeling/README.md). Before modifying a model, consult
+the repository rules in [`AGENTS.md`](AGENTS.md) and the relevant work
+inspection files. The analyzer and comparator are available as
+`npm run model:analyze` and `npm run model:compare`; see the Work 001 README for
+their selected-root usage and output format.
 
 ## Commands
 
 ```bash
-npm run dev        # start the Vite development server
-npm run lint       # lint TypeScript and TSX source
-npm test           # run locale behavior tests
+npm run dev        # studio index and direct work URLs
+npm run lint       # lint repository TypeScript
+npm test           # run unit and locale behavior tests
 npm run typecheck  # check TypeScript types
-npm run build      # build the studio and copy works into dist/works
+npm run build      # validate metadata, build studio, package published works
 ```
 
-The build output is in `dist/` and can be served by static hosting. The build copies the contents of `works/` to `dist/works/` as static files.
+`npm run build` validates the work directories before building the React site.
+It then packages each published work into `dist/works/<slug>/`, preserving
+direct work URLs. The generated manifest is a Vite virtual module and is not
+manually edited or checked in.
 
-## Adding a work
+## Work boundaries and deployed files
 
-Read [works/README.md](works/README.md) for the work directory contract. In short, add a lowercase kebab-case directory such as `works/quiet-garden/`, put a browser-ready `index.html` and its assets there, and make sure it works at its own URL. If a work has a build step, its browser-ready output belongs in that directory. The root build copies it to `dist/works/quiet-garden/` without requiring the studio app to import it or know its framework.
+The studio page imports only localized metadata and references static
+thumbnails. It does not import a work's source code or load its GLB, Three.js,
+video, or other large runtime assets. A standard link navigates to the
+independent work entry point, where that experience initializes itself.
 
-The studio site and works are served as separate pages. A work should provide its own return link to the studio, and its assets should use paths that continue to work from the deployed work URL. Static hosting should serve `index.html` for a work directory URL such as `/works/quiet-garden/`.
+For each published work, production packaging includes its browser entry,
+runtime source, and assets. It omits `work.json` (already represented in the
+studio manifest), `README.md`, `.blend` files, `assets/model/source/`,
+`assets/model/inspection/`, and `assets/model/reference/`. Source, reference
+notes, and inspection assets remain in Git for authoring and validation. A
+small homepage thumbnail such as `thumbnail.webp` should live outside those
+excluded development directories.
+
+## Languages
+
+The studio shell supports English (`en`) and Korean (`ko`). On a first visit it
+uses Korean when the browser's preferred language is Korean, and English
+otherwise. Choosing `EN` or `KO` stores that preference in `localStorage`.
+Shared studio UI translations live in `src/i18n/en.ts` and `src/i18n/ko.ts`.
+Each work owns its bilingual title, category, and description in `work.json`.
 
 ## Deployment
 
-The project is static-first and intended to work with free static hosting such as GitHub Pages or Cloudflare Pages. No hosting provider or production deployment workflow is selected yet. The Vite build uses relative asset paths so the output can be hosted from a domain root or a project subpath.
+The project is static-first and intended for static hosting. A host should
+serve `index.html` for directory URLs such as `/works/001-galaxy-z-fold8/`.
+Vite uses relative asset URLs for the studio build; work files keep paths
+relative to their own directory. No backend or database is used.
 
 ## Licensing
 
-Reusable source code is released under the MIT License in [LICENSE](LICENSE). Original creative works and assets are excluded from that license unless a work says otherwise; they remain with their respective copyright owner(s). See [docs/licensing.md](docs/licensing.md) for the full policy and third-party asset requirements.
-
-This repository is public, but external contributions are not currently accepted.
+Reusable source code is released under the MIT License in [LICENSE](LICENSE).
+Original creative works and assets are excluded from that license unless a
+work says otherwise; they remain with their respective copyright owner(s). See
+[docs/licensing.md](docs/licensing.md) for the full policy and third-party
+asset requirements.

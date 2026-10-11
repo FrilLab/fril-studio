@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the Fril Studio Galaxy Z Fold8 exterior concept asset.
 
-Run with Blender 4.5 or newer:
+Run with Blender 5.2 LTS:
     blender --background --python source/build_fold8.py
 
 This command-line invocation is the canonical reproducible workflow. To run
@@ -92,6 +92,7 @@ BLEND_PATH = SCRIPT_DIR / "galaxy-z-fold8.blend"
 GLB_PATH = EXPORT_DIR / "galaxy-z-fold8.glb"
 
 # Official Samsung exterior dimensions, converted from millimeters to meters.
+# Source: https://www.samsung.com/uk/support/mobile-devices/what-is-the-difference-between-the-galaxy-z-fold-models/
 WIDTH_OPEN = 0.1614
 HEIGHT = 0.1239
 THICKNESS_OPEN = 0.0045
@@ -104,13 +105,90 @@ HALF_WIDTH = WIDTH_OPEN / 2.0
 LEFT_BODY_CENTER_X = HALF_WIDTH / 2.0
 RIGHT_BODY_CENTER_X = -HALF_WIDTH / 2.0
 
+# Product-shape parameters. The reference GLB uses a different glTF axis
+# orientation, so component ratios below use its verified body leaf rather
+# than copying any raw coordinate or unit.
+# Reference source and license are recorded in assets/model/reference/README.md.
+OUTER_CORNER_RADIUS = 0.0042  # Approximation from official product imagery.
+# Samsung Design describes consistent edge curvature, but does not specify
+# the internal hinge-side cutouts. Keep these tighter based on the reference
+# silhouette and folded render fit; 0.6 mm is visual inference, not a datum.
+HINGE_CORNER_RADIUS = 0.0006
+REAR_PANEL_WIDTH = 0.0786  # Approximation from the existing reconstruction.
+REAR_PANEL_HEIGHT = 0.1218  # Approximation from the existing reconstruction.
+MAIN_BEZEL_WIDTH = HALF_WIDTH - 0.0008
+MAIN_BEZEL_HEIGHT = HEIGHT - 0.0024
+MAIN_CORNER_RADIUS = 0.0040  # Approximation from official product imagery.
+COVER_BEZEL_WIDTH_EXTRA = 0.0042
+COVER_BEZEL_HEIGHT_EXTRA = 0.0030
+COVER_BEZEL_CORNER_RADIUS = 0.0052
+COVER_SCREEN_CORNER_RADIUS = 0.0046
+
+# Ratios measured from the selected reference leaf and camera hierarchy in
+# inspection/analysis/reference.json. The camera island is a name-selected
+# union, so these are medium-confidence proportions, not official dimensions.
+CAMERA_ISLAND_WIDTH_TO_HALF_BODY = 0.25309643
+CAMERA_ISLAND_HEIGHT_TO_BODY = 0.34285776
+CAMERA_ISLAND_OUTER_MARGIN_TO_HALF_BODY = 0.07512800
+CAMERA_ISLAND_TOP_MARGIN_TO_BODY = 0.04246087
+CAMERA_RING_DIAMETER_TO_ISLAND_WIDTH = 0.73713004
+CAMERA_GLASS_DIAMETER_TO_ISLAND_WIDTH = 0.66975843
+CAMERA_LENS_SPACING_TO_ISLAND_HEIGHT = 0.37214288
+CAMERA_FLASH_DIAMETER_TO_ISLAND_WIDTH = 0.20591043
+CAMERA_FLASH_BOTTOM_OFFSET_TO_ISLAND_HEIGHT = 0.12174180
+
+CAMERA_ISLAND_WIDTH = HALF_WIDTH * CAMERA_ISLAND_WIDTH_TO_HALF_BODY
+CAMERA_ISLAND_HEIGHT = HEIGHT * CAMERA_ISLAND_HEIGHT_TO_BODY
+CAMERA_ISLAND_OUTER_MARGIN = HALF_WIDTH * CAMERA_ISLAND_OUTER_MARGIN_TO_HALF_BODY
+CAMERA_ISLAND_TOP_MARGIN = HEIGHT * CAMERA_ISLAND_TOP_MARGIN_TO_BODY
+CAMERA_ISLAND_CENTER_X = HALF_WIDTH - CAMERA_ISLAND_OUTER_MARGIN - CAMERA_ISLAND_WIDTH / 2.0
+CAMERA_ISLAND_CENTER_Y = HEIGHT / 2.0 - CAMERA_ISLAND_TOP_MARGIN - CAMERA_ISLAND_HEIGHT / 2.0
+CAMERA_ISLAND_CORNER_RADIUS = CAMERA_ISLAND_WIDTH / 2.0
+CAMERA_RING_DIAMETER = CAMERA_ISLAND_WIDTH * CAMERA_RING_DIAMETER_TO_ISLAND_WIDTH
+CAMERA_GLASS_DIAMETER = CAMERA_ISLAND_WIDTH * CAMERA_GLASS_DIAMETER_TO_ISLAND_WIDTH
+CAMERA_LENS_SPACING = CAMERA_ISLAND_HEIGHT * CAMERA_LENS_SPACING_TO_ISLAND_HEIGHT
+CAMERA_LENS_PAIR_CENTER_Y = CAMERA_ISLAND_CENTER_Y + 0.003016  # Inferred from the reference lens envelope.
+CAMERA_LENS_TOP_Y = CAMERA_LENS_PAIR_CENTER_Y + CAMERA_LENS_SPACING / 2.0
+CAMERA_LENS_BOTTOM_Y = CAMERA_LENS_PAIR_CENTER_Y - CAMERA_LENS_SPACING / 2.0
+CAMERA_FLASH_DIAMETER = CAMERA_ISLAND_WIDTH * CAMERA_FLASH_DIAMETER_TO_ISLAND_WIDTH
+CAMERA_FLASH_RADIUS = CAMERA_FLASH_DIAMETER / 2.0
+CAMERA_FLASH_Y = (
+    CAMERA_ISLAND_CENTER_Y - CAMERA_ISLAND_HEIGHT / 2.0
+    + CAMERA_ISLAND_HEIGHT * CAMERA_FLASH_BOTTOM_OFFSET_TO_ISLAND_HEIGHT
+)
+
+# The reference has a long, narrow center rail (7.25 mm / 121.95 mm). Its
+# interpretation as a hinge cover is inferred with medium confidence. Split
+# it across both leaves so the rail follows the runtime pivots when folded.
+HINGE_REAR_RAIL_WIDTH = WIDTH_OPEN * 0.04480118
+HINGE_REAR_RAIL_HEIGHT = HEIGHT * 0.98429798
+HINGE_REAR_RAIL_LEAF_WIDTH = HINGE_REAR_RAIL_WIDTH / 2.0
+HINGE_REAR_RAIL_DEPTH = 0.00005  # Subtle surface layer, contained in body bounds.
+HINGE_RAIL_SEAM_RADIUS = 0.0001  # Keeps the two articulated halves nearly square at the seam.
+HINGE_SPINE_WIDTH = WIDTH_FOLDED - HALF_WIDTH
+HINGE_SPINE_CENTER_X = HINGE_SPINE_WIDTH / 2.0
+
 FRAME_DEPTH = 0.00438
 SCREEN_LIFT = THICKNESS_OPEN - FRAME_DEPTH
+# Camera depth layers are Fril-owned approximations. The reference camera
+# envelope's depth is excluded because it conflicts with the official folded
+# stack and its component boundaries are uncertain.
+CAMERA_ISLAND_PROTRUSION = 0.00058
+CAMERA_ISLAND_RECESS = 0.000025
+CAMERA_RING_BACK_OFFSET = 0.00057
+CAMERA_RING_DEPTH = 0.00046
+CAMERA_RING_BEVEL = 0.00008
+CAMERA_GLASS_BACK_OFFSET = 0.00086
+CAMERA_GLASS_DEPTH = 0.00012
+FLASH_BACK_OFFSET = 0.00072
+FLASH_DEPTH = 0.00022
+# Samsung lists a 7.6-inch 4:3 main display and a 5.5-inch 10:16 cover
+# display for the Fold8: https://www.samsung.com/us/smartphones/galaxy-z-fold8/
 MAIN_ASPECT = 4.0 / 3.0
-MAIN_DIAGONAL = 0.1932
+MAIN_DIAGONAL = 7.6 * 0.0254
 MAIN_SCREEN_HEIGHT = MAIN_DIAGONAL * 3.0 / 5.0
 MAIN_SCREEN_WIDTH = MAIN_SCREEN_HEIGHT * MAIN_ASPECT
-COVER_DIAGONAL = 0.1384
+COVER_DIAGONAL = 5.5 * 0.0254
 COVER_ASPECT = 10.0 / 16.0
 COVER_SCREEN_HEIGHT = COVER_DIAGONAL / math.sqrt(1.0 + COVER_ASPECT**2)
 COVER_SCREEN_WIDTH = COVER_SCREEN_HEIGHT * COVER_ASPECT
@@ -153,8 +231,8 @@ def round_rect_points(
     """Return a rounded rectangle, with optional per-corner radii.
 
     Tuple order follows the point loop: bottom-right, top-right, top-left,
-    bottom-left. This lets each leaf keep its hinge edge nearly square while
-    retaining a larger radius on its exposed outside corners.
+    bottom-left. This supports equal or different curvature on hinge-side and
+    exposed corners according to the product evidence for each work.
     """
     radii = (radius,) * 4 if isinstance(radius, (float, int)) else radius
     if len(radii) != 4:
@@ -467,30 +545,28 @@ def main() -> None:
 
     # Chassis: each half ends at the hinge axis. The product outline therefore
     # measures exactly 161.4 x 123.9 x 4.5 mm when unfolded.
-    outer_corner_radius = 0.0042
-    hinge_corner_radius = 0.0006
     left_frame = make_prism(
         "LeftFrame", (LEFT_BODY_CENTER_X, 0.0, 0.0), HALF_WIDTH, HEIGHT,
-        -FRAME_DEPTH, 0.0, leaf_corner_radii(False, outer_corner_radius, hinge_corner_radius),
+        -FRAME_DEPTH, 0.0, leaf_corner_radii(False, OUTER_CORNER_RADIUS, HINGE_CORNER_RADIUS),
         graphite_frame, left_body, edge_bevel=0.00018,
     )
     right_frame = make_prism(
         "RightFrame", (RIGHT_BODY_CENTER_X, 0.0, 0.0), HALF_WIDTH, HEIGHT,
-        -FRAME_DEPTH, 0.0, leaf_corner_radii(True, outer_corner_radius, hinge_corner_radius),
+        -FRAME_DEPTH, 0.0, leaf_corner_radii(True, OUTER_CORNER_RADIUS, HINGE_CORNER_RADIUS),
         graphite_frame, right_body, edge_bevel=0.00018,
     )
 
     # Thin, inset graphite rear panels on both leaves.
     make_prism(
-        "RearPanel_Left", (LEFT_BODY_CENTER_X, 0.0, 0.0), 0.0786, 0.1218,
+        "RearPanel_Left", (LEFT_BODY_CENTER_X, 0.0, 0.0), REAR_PANEL_WIDTH, REAR_PANEL_HEIGHT,
         -FRAME_DEPTH - 0.000015, -FRAME_DEPTH + 0.000035,
-        leaf_corner_radii(False, 0.0040, 0.00055),
+        leaf_corner_radii(False, MAIN_CORNER_RADIUS, HINGE_CORNER_RADIUS),
         graphite_panel, left_body,
     )
     make_prism(
-        "RearPanel_Right", (RIGHT_BODY_CENTER_X, 0.0, 0.0), 0.0786, 0.1218,
+        "RearPanel_Right", (RIGHT_BODY_CENTER_X, 0.0, 0.0), REAR_PANEL_WIDTH, REAR_PANEL_HEIGHT,
         -FRAME_DEPTH - 0.000015, -FRAME_DEPTH + 0.000035,
-        leaf_corner_radii(True, 0.0040, 0.00055),
+        leaf_corner_radii(True, MAIN_CORNER_RADIUS, HINGE_CORNER_RADIUS),
         graphite_panel, right_body,
     )
 
@@ -499,19 +575,17 @@ def main() -> None:
     half_active = (MAIN_SCREEN_WIDTH - seam_gap) / 2.0
     left_screen_center_x = seam_gap / 2.0 + half_active / 2.0
     right_screen_center_x = -seam_gap / 2.0 - half_active / 2.0
-    main_bezel_width = HALF_WIDTH - 0.0008
-    main_bezel_height = HEIGHT - 0.0024
     for name, center_x, body, is_left in [
         ("Left", LEFT_BODY_CENTER_X, left_body, False),
         ("Right", RIGHT_BODY_CENTER_X, right_body, True),
     ]:
         make_prism(
-            f"Bezel_Main_{name}", (center_x, 0.0, 0.0), main_bezel_width, main_bezel_height,
+            f"Bezel_Main_{name}", (center_x, 0.0, 0.0), MAIN_BEZEL_WIDTH, MAIN_BEZEL_HEIGHT,
             0.000015, 0.000075,
-            leaf_corner_radii(is_left, 0.0040, 0.00055), display_glass, body,
+            leaf_corner_radii(is_left, MAIN_CORNER_RADIUS, HINGE_CORNER_RADIUS), display_glass, body,
         )
-    main_corner_radii_left = leaf_corner_radii(False, 0.0040, 0.00055)
-    main_corner_radii_right = leaf_corner_radii(True, 0.0040, 0.00055)
+    main_corner_radii_left = leaf_corner_radii(False, MAIN_CORNER_RADIUS, HINGE_CORNER_RADIUS)
+    main_corner_radii_right = leaf_corner_radii(True, MAIN_CORNER_RADIUS, HINGE_CORNER_RADIUS)
     make_screen_surface(
         "Screen_Main_Left", (left_screen_center_x, 0.0, SCREEN_LIFT), half_active,
         MAIN_SCREEN_HEIGHT, main_corner_radii_left, screen_surface, left_body,
@@ -523,43 +597,42 @@ def main() -> None:
 
     # Cover display is a separate runtime surface on the right leaf's outside.
     cover_center_x = RIGHT_BODY_CENTER_X
-    cover_bezel_width = COVER_SCREEN_WIDTH + 0.0042
-    cover_bezel_height = COVER_SCREEN_HEIGHT + 0.0030
+    cover_bezel_width = COVER_SCREEN_WIDTH + COVER_BEZEL_WIDTH_EXTRA
+    cover_bezel_height = COVER_SCREEN_HEIGHT + COVER_BEZEL_HEIGHT_EXTRA
     make_screen_surface(
         "Bezel_Cover", (cover_center_x, 0.0, -FRAME_DEPTH - 0.000025),
-        cover_bezel_width, cover_bezel_height, 0.0052, display_glass, right_body,
+        cover_bezel_width, cover_bezel_height, COVER_BEZEL_CORNER_RADIUS, display_glass, right_body,
         back_facing=True,
     )
     make_screen_surface(
         "Screen_Cover", (cover_center_x, 0.0, -FRAME_DEPTH - 0.00004),
-        COVER_SCREEN_WIDTH, COVER_SCREEN_HEIGHT, 0.0046, screen_surface, right_body,
+        COVER_SCREEN_WIDTH, COVER_SCREEN_HEIGHT, COVER_SCREEN_CORNER_RADIUS, screen_surface, right_body,
         back_facing=True,
     )
 
     # Rear dual-camera island and lenses are separate semantic objects.
     camera_assembly = make_empty("CameraAssembly", left_body)
-    camera_x = 0.0625
-    camera_module_center_y = 0.0280
-    camera_y_top = 0.0410
-    camera_y_bottom = 0.0248
-    camera_y_flash = 0.0108
+    camera_x = CAMERA_ISLAND_CENTER_X
+    camera_module_center_y = CAMERA_ISLAND_CENTER_Y
     make_prism(
-        "CameraIsland", (camera_x, camera_module_center_y, 0.0), 0.0245, 0.0440,
-        -FRAME_DEPTH - 0.00058, -FRAME_DEPTH + 0.000025, 0.0119,
+        "CameraIsland", (camera_x, camera_module_center_y, 0.0), CAMERA_ISLAND_WIDTH, CAMERA_ISLAND_HEIGHT,
+        -FRAME_DEPTH - CAMERA_ISLAND_PROTRUSION, -FRAME_DEPTH + CAMERA_ISLAND_RECESS,
+        CAMERA_ISLAND_CORNER_RADIUS,
         graphite_frame, camera_assembly, edge_bevel=0.00012, segments=10,
     )
-    for lens_name, y in [("Wide", camera_y_top), ("UltraWide", camera_y_bottom)]:
+    for lens_name, y in [("Wide", CAMERA_LENS_TOP_Y), ("UltraWide", CAMERA_LENS_BOTTOM_Y)]:
         make_cylinder(
-            f"CameraRing_{lens_name}", (camera_x, y, -FRAME_DEPTH - 0.00057),
-            0.00660, 0.00046, camera_ring, camera_assembly, bevel_width=0.00008,
+            f"CameraRing_{lens_name}", (camera_x, y, -FRAME_DEPTH - CAMERA_RING_BACK_OFFSET),
+            CAMERA_RING_DIAMETER / 2.0, CAMERA_RING_DEPTH, camera_ring, camera_assembly,
+            bevel_width=CAMERA_RING_BEVEL,
         )
         make_cylinder(
-            f"CameraLens_{lens_name}", (camera_x, y, -FRAME_DEPTH - 0.00086),
-            0.00545, 0.00012, camera_glass, camera_assembly,
+            f"CameraLens_{lens_name}", (camera_x, y, -FRAME_DEPTH - CAMERA_GLASS_BACK_OFFSET),
+            CAMERA_GLASS_DIAMETER / 2.0, CAMERA_GLASS_DEPTH, camera_glass, camera_assembly,
         )
     make_cylinder(
-        "Flash", (camera_x, camera_y_flash, -FRAME_DEPTH - 0.00072),
-        0.0026, 0.00022, flash_material, camera_assembly,
+        "Flash", (camera_x, CAMERA_FLASH_Y, -FRAME_DEPTH - FLASH_BACK_OFFSET),
+        CAMERA_FLASH_RADIUS, FLASH_DEPTH, flash_material, camera_assembly,
     )
 
     # Small front-facing camera apertures; these remain geometry, not a screen texture.
@@ -575,8 +648,29 @@ def main() -> None:
     # Fold axis exterior: it is hidden in the open seam and becomes the narrow
     # outer spine when the left leaf folds over the right one.
     make_prism(
-        "Hinge_Exterior", (0.0006, 0.0, -FRAME_DEPTH / 2.0), 0.0012, HEIGHT,
+        "Hinge_Exterior", (HINGE_SPINE_CENTER_X, 0.0, -FRAME_DEPTH / 2.0), HINGE_SPINE_WIDTH, HEIGHT,
         -FRAME_DEPTH, 0.0, 0.00052, hinge_metal, hinge, edge_bevel=0.00018,
+    )
+
+    # The reference shows a narrow full-height rear rail at the fold. Keep the
+    # two halves on their respective bodies so the surface remains articulated.
+    make_prism(
+        "HingeRearRail_Left",
+        (HINGE_REAR_RAIL_LEAF_WIDTH / 2.0, 0.0, 0.0),
+        HINGE_REAR_RAIL_LEAF_WIDTH, HINGE_REAR_RAIL_HEIGHT,
+        -FRAME_DEPTH - HINGE_REAR_RAIL_DEPTH / 2.0,
+        -FRAME_DEPTH + HINGE_REAR_RAIL_DEPTH / 2.0,
+        leaf_corner_radii(False, HINGE_CORNER_RADIUS, HINGE_RAIL_SEAM_RADIUS),
+        hinge_metal, left_body,
+    )
+    make_prism(
+        "HingeRearRail_Right",
+        (-HINGE_REAR_RAIL_LEAF_WIDTH / 2.0, 0.0, 0.0),
+        HINGE_REAR_RAIL_LEAF_WIDTH, HINGE_REAR_RAIL_HEIGHT,
+        -FRAME_DEPTH - HINGE_REAR_RAIL_DEPTH / 2.0,
+        -FRAME_DEPTH + HINGE_REAR_RAIL_DEPTH / 2.0,
+        leaf_corner_radii(True, HINGE_CORNER_RADIUS, HINGE_RAIL_SEAM_RADIUS),
+        hinge_metal, right_body,
     )
 
     # Side buttons on the right chassis.
@@ -615,7 +709,9 @@ def main() -> None:
     bpy.context.view_layer.update()
     required_names = {
         "GalaxyZFold8", "HingeRoot", "LeftBodyPivot", "RightBodyPivot", "LeftBody", "RightBody", "Hinge",
-        "Screen_Main_Left", "Screen_Main_Right", "Screen_Cover", "CameraAssembly", "CameraLens_Wide", "CameraLens_UltraWide", "Flash",
+        "Screen_Main_Left", "Screen_Main_Right", "Screen_Cover", "CameraAssembly", "CameraIsland",
+        "CameraRing_Wide", "CameraRing_UltraWide", "CameraLens_Wide", "CameraLens_UltraWide", "Flash",
+        "HingeRearRail_Left", "HingeRearRail_Right",
     }
     missing = sorted(name for name in required_names if bpy.data.objects.get(name) is None)
     if missing:
@@ -662,15 +758,21 @@ def main() -> None:
         raise AssertionError("Camera plate, lens rings, and glass must form distinct depth layers")
     if island_front_z - flash_front_z < 0.00015:
         raise AssertionError("Flash must sit visibly proud on the raised camera island")
-    capsule_radius = 0.0119
-    capsule_center_y = 0.0280
-    capsule_cap_center_y = capsule_center_y - (0.0440 / 2.0 - capsule_radius)
-    if abs(camera_flash.location.y - capsule_cap_center_y) + 0.0026 > capsule_radius:
-        raise AssertionError("Flash diffuser must fit inside the lower end of the camera island")
-    if camera_x <= 0.0 or abs(HALF_WIDTH - camera_x - 0.0245 / 2.0 - 0.00595) > 1e-6:
-        raise AssertionError("Camera island must sit near the outer edge of the reference-left half")
-    if abs(HEIGHT / 2.0 - camera_module_center_y - 0.0440 / 2.0 - 0.01195) > 1e-6:
-        raise AssertionError("Camera island must retain a deliberate upper-edge margin")
+    island_bottom_y = camera_module_center_y - CAMERA_ISLAND_HEIGHT / 2.0
+    island_top_y = camera_module_center_y + CAMERA_ISLAND_HEIGHT / 2.0
+    flash_bottom_y = camera_flash.location.y - CAMERA_FLASH_RADIUS
+    flash_top_y = camera_flash.location.y + CAMERA_FLASH_RADIUS
+    lower_lens_bottom_y = CAMERA_LENS_BOTTOM_Y - CAMERA_RING_DIAMETER / 2.0
+    if flash_bottom_y <= island_bottom_y or flash_top_y >= lower_lens_bottom_y:
+        raise AssertionError("Flash diffuser must fit below the lower lens and inside the camera island")
+    if CAMERA_LENS_TOP_Y + CAMERA_RING_DIAMETER / 2.0 >= island_top_y:
+        raise AssertionError("Upper camera ring must fit inside the raised camera island")
+    if CAMERA_LENS_BOTTOM_Y - CAMERA_RING_DIAMETER / 2.0 <= island_bottom_y:
+        raise AssertionError("Lower camera ring must fit inside the raised camera island")
+    if camera_x <= 0.0 or abs(HALF_WIDTH - camera_x - CAMERA_ISLAND_WIDTH / 2.0 - CAMERA_ISLAND_OUTER_MARGIN) > 1e-6:
+        raise AssertionError("Camera island must retain the measured outer-edge margin ratio")
+    if abs(HEIGHT / 2.0 - island_top_y - CAMERA_ISLAND_TOP_MARGIN) > 1e-6:
+        raise AssertionError("Camera island must retain the measured upper-edge margin ratio")
 
     # Each leaf pivot must move its own body while leaving the other leaf in place.
     set_fold(left_pivot, right_pivot, 0.0)
@@ -763,6 +865,36 @@ def main() -> None:
     report = {
         "blender_version": bpy.app.version_string,
         "model": "Unofficial Galaxy Z Fold8 exterior concept for Fril Studio",
+        "evidence": {
+            "official_dimensions_source": "https://www.samsung.com/uk/support/mobile-devices/what-is-the-difference-between-the-galaxy-z-fold-models/",
+            "official_display_source": "https://www.samsung.com/us/smartphones/galaxy-z-fold8/",
+            "qualitative_edge_curvature_source": "https://www.design.samsung.com/global/contents/view/galaxy-z8",
+            "hinge_corner_radius": {
+                "value_mm": HINGE_CORNER_RADIUS * 1000.0,
+                "confidence": "approximate visual inference; kept tighter than exposed corners after reviewing folded and hinge-close renders",
+            },
+            "reference_asset": "assets/model/exported/samsung_galaxy_z_fold8.glb",
+            "reference_root": "SAMSUNG Galaxy Z Fold8_22",
+            "reference_analysis": "assets/model/inspection/analysis/reference.json",
+            "reference_camera_ratios": {
+                "camera_island_width_to_half_body": CAMERA_ISLAND_WIDTH_TO_HALF_BODY,
+                "camera_island_height_to_body": CAMERA_ISLAND_HEIGHT_TO_BODY,
+                "outer_margin_to_half_body": CAMERA_ISLAND_OUTER_MARGIN_TO_HALF_BODY,
+                "top_margin_to_body": CAMERA_ISLAND_TOP_MARGIN_TO_BODY,
+                "confidence": "medium; name-selected camera envelopes normalized against the selected reference body leaf",
+            },
+            "reference_hinge_rail": {
+                "width_to_open_body": 0.04480118,
+                "height_to_body": 0.98429798,
+                "confidence": "medium; measured long center rail interpreted as two articulated rear hinge-cover halves",
+            },
+            "camera_depth_layers_mm": {
+                "island_protrusion": CAMERA_ISLAND_PROTRUSION * 1000.0,
+                "ring_back_offset": CAMERA_RING_BACK_OFFSET * 1000.0,
+                "glass_back_offset": CAMERA_GLASS_BACK_OFFSET * 1000.0,
+                "confidence": "approximate Fril-owned layering; reference depth was excluded from normalization",
+            },
+        },
         "dimensions_mm": {
             "open_body": [round(value * 1000.0, 3) for value in open_dims],
             "folded_width_height_core_stack_mm": [round(value * 1000.0, 3) for value in folded_dims],

@@ -1,60 +1,6 @@
 import { useI18n } from './i18n'
 import type { Locale } from './i18n'
-import type { TranslationKey } from './i18n/en'
-
-type Work = {
-  number: string
-  title: TranslationKey
-  category: TranslationKey
-  year: string
-  art: 'form' | 'story' | 'objects' | 'play'
-  posterTitle: TranslationKey
-  posterNote: TranslationKey
-  visualDescription: TranslationKey
-}
-
-const works: Work[] = [
-  {
-    number: '001',
-    title: 'works.form.title',
-    category: 'works.form.category',
-    year: '2026',
-    art: 'form',
-    posterTitle: 'works.form.posterTitle',
-    posterNote: 'works.form.posterNote',
-    visualDescription: 'accessibility.artwork.form',
-  },
-  {
-    number: '002',
-    title: 'works.story.title',
-    category: 'works.story.category',
-    year: '2026',
-    art: 'story',
-    posterTitle: 'works.story.posterTitle',
-    posterNote: 'works.story.posterNote',
-    visualDescription: 'accessibility.artwork.story',
-  },
-  {
-    number: '003',
-    title: 'works.objects.title',
-    category: 'works.objects.category',
-    year: '2026',
-    art: 'objects',
-    posterTitle: 'works.objects.posterTitle',
-    posterNote: 'works.objects.posterNote',
-    visualDescription: 'accessibility.artwork.objects',
-  },
-  {
-    number: '004',
-    title: 'works.play.title',
-    category: 'works.play.category',
-    year: '2026',
-    art: 'play',
-    posterTitle: 'works.play.posterTitle',
-    posterNote: 'works.play.posterNote',
-    visualDescription: 'accessibility.artwork.play',
-  },
-]
+import works from 'virtual:fril-works'
 
 const App = () => {
   const { locale, setLocale, t } = useI18n()
@@ -135,41 +81,64 @@ const App = () => {
                 <p className="eyebrow">{t('works.collection')}</p>
                 <h2 id="works-title">{t('works.title')}</h2>
               </div>
-              <span className="section-count">01 — 04</span>
+              <span className="section-count">
+                {works.length > 0 ? '01' : '00'} — {String(works.length).padStart(2, '0')}
+              </span>
             </div>
 
-            <div className="work-grid">
-              {works.map((work, index) => (
-                <article
-                  className={`work-item${index === 0 ? ' work-item--feature' : ''}`}
-                  key={work.number}
-                >
-                  <div
-                    className={`artwork artwork--${work.art}`}
-                    role="img"
-                    aria-label={t(work.visualDescription)}
-                  >
-                    <span className="artwork-label">FRIL STUDIO&nbsp; / &nbsp;{work.number}</span>
-                    <span className="artwork-shape" aria-hidden="true" />
-                    <span className="artwork-title" aria-hidden="true">{t(work.posterTitle)}</span>
-                    <span className="artwork-note" aria-hidden="true">{t(work.posterNote)}</span>
-                    <span className="artwork-coordinates" aria-hidden="true">{work.year}</span>
-                  </div>
-                  <div className="work-caption">
-                    <div className="work-name-line">
-                      <span className="work-number">{work.number}</span>
-                      <h3>{t(work.title)}</h3>
-                    </div>
-                    <p className="work-meta">
-                      <span>{t(work.category)}</span>
-                      <span>{work.year}</span>
-                    </p>
-                    <p className="work-status">{t('works.status')}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-            <p className="collection-note">{t('works.collectionNote')}</p>
+            {works.length > 0 ? (
+              <>
+                <div className="work-grid">
+                  {works.map((work, index) => (
+                    <article
+                      className={`work-item${index === 0 ? ' work-item--feature' : ''}`}
+                      key={work.slug}
+                    >
+                      <a
+                        className={`work-preview${work.thumbnail ? '' : ' work-preview--empty'}`}
+                        href={work.entry}
+                        aria-label={`${work.title[locale]} — ${t('works.viewWork')}`}
+                      >
+                        {work.thumbnail ? (
+                          <img
+                            className="work-thumbnail"
+                            src={work.thumbnail}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        ) : (
+                          <span className="work-preview-fallback" aria-hidden="true">
+                            <span>FRIL STUDIO / {work.id}</span>
+                            <span>{work.title[locale]}</span>
+                          </span>
+                        )}
+                        <span className="work-preview-link" aria-hidden="true">
+                          {t('works.viewWork')} <span>↗</span>
+                        </span>
+                      </a>
+                      <div className="work-caption">
+                        <div className="work-name-line">
+                          <span className="work-number">{work.id}</span>
+                          <h3>{work.title[locale]}</h3>
+                        </div>
+                        <p className="work-meta">
+                          <span>{work.category[locale]}</span>
+                          <span>{work.year}</span>
+                        </p>
+                        <p className="work-description">{work.description[locale]}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+                <p className="collection-note">{t('works.collectionNote')}</p>
+              </>
+            ) : (
+              <div className="works-empty">
+                <h3>{t('works.emptyTitle')}</h3>
+                <p>{t('works.emptyDescription')}</p>
+              </div>
+            )}
           </section>
 
           <section className="about" id="about" aria-labelledby="about-title">

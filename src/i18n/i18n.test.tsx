@@ -55,6 +55,13 @@ describe('language switcher', () => {
 
     expect(document.documentElement.lang).toBe('en')
     expect(container.querySelector('#works-title')?.textContent).toBe('Selected works')
+    expect(container.querySelectorAll('.work-item')).toHaveLength(1)
+    expect(container.querySelector('.work-caption h3')?.textContent).toBe('Galaxy Z Fold8')
+    expect(container.querySelector('.work-meta')?.textContent).toContain('Interactive 3D')
+    expect(container.querySelector('.work-preview')?.getAttribute('href'))
+      .toBe('/works/001-galaxy-z-fold8/')
+    expect(container.querySelector('.work-thumbnail')?.getAttribute('src'))
+      .toBe('/works/001-galaxy-z-fold8/thumbnail.webp')
 
     const koreanButton = container.querySelector<HTMLButtonElement>(
       '.language-option[aria-label="Korean"]',
@@ -63,6 +70,9 @@ describe('language switcher', () => {
     act(() => koreanButton?.click())
 
     expect(container.querySelector('#works-title')?.textContent).toBe('주요 작품')
+    expect(container.querySelector('.work-meta')?.textContent).toContain('인터랙티브 3D')
+    expect(container.querySelector('.work-description')?.textContent)
+      .toContain('스크롤로 살펴봅니다')
     expect(document.documentElement.lang).toBe('ko')
     expect(document.title).toContain('안으로 들어가 볼 수 있는 아이디어')
     expect(document.querySelector('meta[name="description"]')?.getAttribute('content'))
