@@ -1,6 +1,7 @@
 import { useI18n } from './i18n'
 import type { Locale } from './i18n'
 import works from 'virtual:fril-works'
+import frilStudioLogo from '../assets/brand/logo/source/frilstudio.svg?url'
 
 const App = () => {
   const { locale, setLocale, t } = useI18n()
@@ -25,8 +26,7 @@ const App = () => {
       <div className="studio" id="top">
         <header className="masthead">
           <a className="wordmark" href="#top" aria-label={t('accessibility.homeLink')}>
-            FRIL<span aria-hidden="true">.</span>
-            <span className="wordmark-studio">STUDIO</span>
+            <img src={frilStudioLogo} alt="" />
           </a>
 
           <div className="header-tools">
@@ -57,13 +57,17 @@ const App = () => {
               <p>{t('hero.studioType')}</p>
               <p>{t('hero.location')}</p>
             </div>
+            <div className="hero-brand-stage">
+              <img
+                className="hero-logo"
+                src={frilStudioLogo}
+                alt="FrilStudio"
+                fetchPriority="high"
+              />
+            </div>
             <div className="hero-copy">
               <p className="eyebrow">{t('hero.disciplines')}</p>
-              <h1 id="hero-title">
-                {t('hero.titleFirst')}
-                <br />
-                <span>{t('hero.titleSecond')}</span>
-              </h1>
+              <h1 className="hero-tagline" id="hero-title">{t('hero.tagline')}</h1>
               <div className="hero-bottom">
                 <p className="hero-description">{t('hero.description')}</p>
                 <a className="explore-link" href="#works">
@@ -157,8 +161,10 @@ const App = () => {
         </main>
 
         <footer className="footer">
-          <a className="footer-mark" href="#top">FRIL STUDIO<span aria-hidden="true">.</span></a>
-          <span>{t('footer.tagline')}&nbsp; · &nbsp;© 2026</span>
+          <a className="footer-mark" href="#top" aria-label={t('accessibility.homeLink')}>
+            <img src={frilStudioLogo} alt="" />
+          </a>
+          <span className="footer-tagline">{t('footer.tagline')}&nbsp; · &nbsp;© 2026</span>
           <a className="back-to-top" href="#top">{t('footer.backToTop')}</a>
         </footer>
       </div>

@@ -1,6 +1,6 @@
 const en = {
   'accessibility.skipToContent': 'Skip to content',
-  'accessibility.homeLink': 'Fril Studio home',
+  'accessibility.homeLink': 'FrilStudio home',
   'accessibility.mainNavigation': 'Main navigation',
   'accessibility.mobileNavigation': 'Mobile navigation',
   'accessibility.languageSwitcher': 'Language',
@@ -14,6 +14,7 @@ const en = {
   'hero.disciplines': 'Code / Motion / Story / Play',
   'hero.titleFirst': 'Ideas you can',
   'hero.titleSecond': 'step inside.',
+  'hero.tagline': 'Ideas you can step inside.',
   'hero.description':
     'We make interactive experiences for the open web — small worlds built to be explored.',
   'hero.exploreWorks': 'Explore selected works',
@@ -27,14 +28,15 @@ const en = {
   'about.section': '02 — Studio',
   'about.title': 'A quiet place for curious work.',
   'about.paragraphOne':
-    'Fril Studio is an independent practice exploring what happens when code, motion, and stories meet in a browser.',
+    'FrilStudio is an independent practice exploring what happens when code, motion, and stories meet in a browser.',
   'about.paragraphTwo':
     'The studio is a small gallery and a way in. Every work is made to stand on its own, with the freedom to find its own tools, colors, and rules.',
   'footer.tagline': 'Made for the open web',
+  'footer.parentBrand': 'A FrilLab project',
   'footer.backToTop': 'Back to top ↑',
-  'metadata.title': 'Fril Studio — Ideas you can step inside',
+  'metadata.title': 'FrilStudio — Ideas you can step inside',
   'metadata.description':
-    'Fril Studio is an independent web studio making interactive experiences for the open web.',
+    'FrilStudio is an independent web studio making interactive experiences for the open web.',
 } as const
 
 export type TranslationKey = keyof typeof en
