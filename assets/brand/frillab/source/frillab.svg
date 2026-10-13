@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" role="img" aria-labelledby="title description">
+  <title id="title">FrilLab</title>
+  <desc id="description">A small blue and yellow FrilLab parent-brand wordmark.</desc>
+  <style>
+    .wordmark { font-family: "Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif; font-size: 126px; font-weight: 900; letter-spacing: -8px; paint-order: stroke fill; stroke: #172b43; stroke-linejoin: round; stroke-width: 10px; }
+  </style>
+  <text class="wordmark" x="15" y="128"><tspan fill="#3989e8">Fril</tspan><tspan fill="#ffd34d">Lab</tspan></text>
+</svg>

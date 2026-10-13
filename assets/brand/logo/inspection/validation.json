@@ -1,0 +1,18 @@
+{
+  "asset": "FrilStudio wordmark",
+  "source_svg": "../source/frilstudio.svg",
+  "font_source": "/System/Library/Fonts/Supplemental/Didot.ttc",
+  "glb": "exported/frilstudio.glb",
+  "objects": [
+    "Fril_Outline",
+    "Fril_Blue",
+    "Studio_Outline",
+    "Studio_Gold"
+  ],
+  "triangles": 41712,
+  "materials": [
+    "Fine edge \u2022 midnight ink",
+    "Fril \u2022 deep blue enamel",
+    "Studio \u2022 muted gold enamel"
+  ]
+}
