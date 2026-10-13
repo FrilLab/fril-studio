@@ -22,3 +22,13 @@ Do not include an asset just because it is available to download. Keep each work
 ## Brand experiments
 
 Creative experiments involving existing brands or products must not imply official affiliation or endorsement. Document relevant third-party trademarks and assets, and respect their applicable usage terms.
+
+## Mascot modeling reference
+
+The approved visual set for the current modeling pass is stored under `assets/brand/mascot/source/`:
+
+- `Modeling Base Sheet.png` — body proportions and global silhouette
+- `Head Construction Sheet.png` — head, face, and crest geometry
+- `turnaround sheet.png` — hands, feet, scarf, and secondary details
+
+The images are retained as modeling references and are not runtime assets. The low-poly mannequin file is excluded from version control until its modification and redistribution rights are established. No mascot mesh, rig, animation, or final mascot GLB is included in this change. Keep the reference images with their original ownership and usage terms.
